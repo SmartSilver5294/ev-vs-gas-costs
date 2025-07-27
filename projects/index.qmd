@@ -14,6 +14,9 @@ library(marginaleffects)
 library(readr)
 library(dplyr)
 library(parsnip)
+library(tibble)
+library(leaflet)
+library(sf)
 ```
 
 ```{r}
@@ -133,13 +136,79 @@ Wyoming,0.386
 
 
 
-# Join the two datasets
+# Convert data.frames to tibbles
+gas_prices <- as_tibble(gas_prices)
+ev_prices <- as_tibble(ev_prices)
 combined_data <- left_join(gas_prices, ev_prices, by = "State")
 
-# Set up and fit a model
-model <- linear_reg() %>% 
-  set_engine("lm")
+combined_data <- combined_data |> 
+  mutate(
+    EV_3yr_Cost = Cost_per_kWh * 4050 * 3,
+    Gas_3yr_Cost = Regular * 540 * 3
+  )
 
-# Fit model: Predict gas price from electricity cost
-fit(model, Regular ~ Cost_per_kWh, data = combined_data)
+combined_data <- combined_data %>%
+  mutate(
+    cost_diff = Gas_3yr_Cost - EV_3yr_Cost
+  )
+
+
+
+
+# Constants
+annual_miles <- 13500
+ev_efficiency_kWh_per_mile <- 0.3
+gas_efficiency_mpg <- 25
+
+combined_data
+linear_reg()|> fit(Gas_3yr_Cost ~ EV_3yr_Cost + Regular + Cost_per_kWh, data = combined_data)
+```
+
+
+```{r}
+#| label: Interactive Plot
+# Get US state map data and convert to polygons
+states_map <- map_data("state")
+
+# Merge with your combined cost data
+combined_data <- combined_data %>%
+  mutate(region = tolower(State),
+         cost_diff = Gas_3yr_Cost - EV_3yr_Cost)
+
+# Join map and cost data
+map_data_joined <- left_join(states_map, combined_data, by = "region")
+
+# Create polygons for leaflet (use group_by + nest coordinates)
+state_polygons <- map_data_joined %>%
+  group_by(region, group) %>%
+  summarize(do_union = FALSE,
+            geometry = st_sfc(st_polygon(list(cbind(long, lat)))), .groups = "drop") %>%
+  st_as_sf()
+
+# Join cost difference back in
+state_polygons <- left_join(state_polygons, combined_data, by = "region")
+
+# Build leaflet map
+leaflet(state_polygons) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(
+    fillColor = ~colorNumeric("RdYlGn", domain = cost_diff, reverse = TRUE)(cost_diff),
+    fillOpacity = 0.7,
+    weight = 0.5,
+    color = "white",
+    popup = ~paste0(
+      "<strong>", State, "</strong><br/>",
+      "Gas 3-yr: $", round(Gas_3yr_Cost, 2), "<br/>",
+      "EV 3-yr: $", round(EV_3yr_Cost, 2), "<br/>",
+      "Diff: $", round(cost_diff, 2)
+    )
+  ) %>%
+  addLegend(
+    position = "bottomright",
+    pal = colorNumeric("RdYlGn", domain = state_polygons$cost_diff, reverse = TRUE),
+    values = ~cost_diff,
+    title = "Gas - EV Cost Diff",
+    labFormat = labelFormat(prefix = "$")
+  )
+
 ```
