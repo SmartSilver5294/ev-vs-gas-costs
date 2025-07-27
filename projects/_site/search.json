@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "EV charging vs Gas costs over 3 years",
+    "section": "",
+    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = Regular ~ Cost_per_kWh, data = data)\n\nCoefficients:\n (Intercept)  Cost_per_kWh  \n      2.7978        0.9301"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
