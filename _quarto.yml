@@ -7,6 +7,10 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - text: Graphs
+        menu:
+          - href: test.qmd
+            text: Graph 1
       - about.qmd
 
 format:
