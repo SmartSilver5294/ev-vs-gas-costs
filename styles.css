@@ -1,1 +1,108 @@
 /* css styles */
+
+/* ====== Page Load Animation ====== */
+body {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ====== Navbar Slide-In Animation ====== */
+.navbar {
+  transform: translatex(0);
+  opacity: 0;
+  animation: slideDown 0.8s ease-out 0.5s forwards;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* actual colors */
+
+body {
+  background-color:  #fdf6f0 ;
+  color: #333333;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* Main content wrapper */
+main, section {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #e3e9f0; /* lighter background (was body) */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  background-color: #ff5e5b;
+  color: #ffffff;
+  border-bottom: 2px solid #ddd;
+  background: linear-gradient(90deg, #ff5e5b, #ffb400);
+
+}
+
+
+.navbar a {
+  color:rgb(255, 255, 255) !important;
+  font-weight: 500;
+  font-size: 1rem;
+
+}
+
+.dropdown-item {
+  color: #ffffff;
+  transition: background-color 0.2s ease, font-style 0.1s ease;
+}
+
+.dropdown-menu {
+  background-color: #ff5e5b; /* match your navbar */
+  border: none;
+  box-shadow: none;
+}
+
+.dropdown-menu a:hover {
+  background-color:rgba(255, 255, 255, 0.08);
+  font-style: italic;
+}
+
+.navbar a:hover {
+  color: #ffb400  !important;
+}
+
+h1, h2 {
+  color:rgb(0, 0, 0);
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  color:rgb(0, 0, 0);
+}
+
+.cta-button {
+  background-color: #2980B9;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1A5276;
+}
+
