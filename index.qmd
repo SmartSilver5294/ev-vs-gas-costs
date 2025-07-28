@@ -1,5 +1,5 @@
 ---
-title: "EV charging vs Gas costs over 3 years"
+title: "EV Charging vs Gas Costs Over 3 Years"
 author: "Ayush Chandra"
 execute:
     echo: false

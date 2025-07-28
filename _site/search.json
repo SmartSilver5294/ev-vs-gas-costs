@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "EV charging vs Gas costs over 3 years",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
     "section": "",
     "text": "# A tibble: 51 × 6\n   State           Regular Cost_per_kWh EV_3yr_Cost Gas_3yr_Cost cost_diff\n   &lt;chr&gt;             &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt;        &lt;dbl&gt;     &lt;dbl&gt;\n 1 Alaska             3.76        0.51        6196.        6094.    -102. \n 2 Alabama            2.79        0.437       5310.        4518.    -791. \n 3 Arkansas           2.81        0.424       5152.        4554.    -598. \n 4 Arizona            3.17        0.419       5091.        5139.      47.8\n 5 California         4.47        0.384       4666.        7246.    2581. \n 6 Colorado           3.02        0.334       4058.        4899.     841. \n 7 Connecticut        3.11        0.368       4471.        5037.     565. \n 8 Washington D.C.    3.33        0.337       4095.        5393.    1298. \n 9 Delaware           3.07        0.321       3900.        4977.    1076. \n10 Florida            3.12        0.391       4751.        5059.     309. \n# ℹ 41 more rows\n\n\nparsnip model object\n\n\nCall:\nstats::lm(formula = Gas_3yr_Cost ~ EV_3yr_Cost + Regular + Cost_per_kWh, \n    data = data)\n\nCoefficients:\n (Intercept)   EV_3yr_Cost       Regular  Cost_per_kWh  \n   5.784e-13     9.510e-17     1.620e+03            NA"
   },
