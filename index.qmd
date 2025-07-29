@@ -164,6 +164,7 @@ annual_miles <- 13500
 ev_efficiency_kWh_per_mile <- 0.3
 gas_efficiency_mpg <- 25
 
+# add counties to each state possibly? Myabe add the leading countries and not just US
 combined_data
 linear_reg()|> fit(Gas_3yr_Cost ~ EV_3yr_Cost + Regular + Cost_per_kWh, data = combined_data)
 ```
