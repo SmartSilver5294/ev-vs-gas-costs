@@ -11,6 +11,167 @@
     "href": "index.html",
     "title": "EV Charging vs Gas Costs Over 3 Years",
     "section": "",
-    "text": "# A tibble: 51 × 6\n   State           Regular Cost_per_kWh EV_3yr_Cost Gas_3yr_Cost cost_diff\n   &lt;chr&gt;             &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt;        &lt;dbl&gt;     &lt;dbl&gt;\n 1 Alaska             3.76        0.51        6196.        6094.    -102. \n 2 Alabama            2.79        0.437       5310.        4518.    -791. \n 3 Arkansas           2.81        0.424       5152.        4554.    -598. \n 4 Arizona            3.17        0.419       5091.        5139.      47.8\n 5 California         4.47        0.384       4666.        7246.    2581. \n 6 Colorado           3.02        0.334       4058.        4899.     841. \n 7 Connecticut        3.11        0.368       4471.        5037.     565. \n 8 Washington D.C.    3.33        0.337       4095.        5393.    1298. \n 9 Delaware           3.07        0.321       3900.        4977.    1076. \n10 Florida            3.12        0.391       4751.        5059.     309. \n# ℹ 41 more rows\n\n\nparsnip model object\n\n\nCall:\nstats::lm(formula = Gas_3yr_Cost ~ EV_3yr_Cost + Regular + Cost_per_kWh, \n    data = data)\n\nCoefficients:\n (Intercept)   EV_3yr_Cost       Regular  Cost_per_kWh  \n   5.784e-13     9.510e-17     1.620e+03            NA"
+    "text": "Available Vehicle Comparisons\n\n\nIndex\nVehicle Comparison\nEV Efficiency\nGas Efficiency\n\n\n\n\n1\nFord Mustang Mach-E vs Ford Mustang\n0.32 kWh/mile\n25 mpg\n\n\n2\nHyundai Ioniq 5 vs Hyundai Tucson\n0.28 kWh/mile\n26 mpg\n\n\n3\nFord F-150 Lightning vs Ford F-150\n0.48 kWh/mile\n20 mpg\n\n\n4\nHonda Prologue vs Honda Passport\n0.3 kWh/mile\n22 mpg\n\n\n5\nChevrolet Equinox EV vs Chevrolet Equinox\n0.29 kWh/mile\n28 mpg\n\n\n6\nCadillac Lyriq vs Cadillac XT5\n0.33 kWh/mile\n21 mpg\n\n\n7\nVolkswagen ID.4 vs Volkswagen Tiguan\n0.3 kWh/mile\n24 mpg\n\n\n8\nNissan Ariya vs Nissan Rogue\n0.31 kWh/mile\n27 mpg\n\n\n9\nKia EV6 vs Kia Sportage\n0.28 kWh/mile\n25 mpg"
+  },
+  {
+    "objectID": "index.html#ev-vs-gas-cost-comparison-tool",
+    "href": "index.html#ev-vs-gas-cost-comparison-tool",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "",
+    "text": "Select a vehicle pair from the dropdown below to see the 3-year cost comparison across all US states:\n\n\n\nSelect Vehicle Comparison:"
+  },
+  {
+    "objectID": "index.html#vehicle-comparison-maps",
+    "href": "index.html#vehicle-comparison-maps",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "Vehicle Comparison Maps",
+    "text": "Vehicle Comparison Maps\n\nFord Mustang Mach-E vs Ford Mustang\n\n\nHyundai Ioniq 5 vs Hyundai Tucson\n\n\nFord F‑150 Lightning vs Ford F‑150\n\n\nHonda Prologue vs Honda Passport\n\n\nChevrolet Equinox EV vs Chevrolet Equinox\n\n\nCadillac Lyriq vs Cadillac XT5\n\n\nVolkswagen ID.4 vs Volkswagen Tiguan\n\n\nNissan Ariya vs Nissan Rogue\n\n\nKia EV6 vs Kia Sportage\n\n\n## Summary by Vehicle Pair\n\n\n\nAverage 3-Year Cost Comparison Across All States\n\n\n\n\n\n\n\n\n\n\n\nEV Model\nGas Model\nAvg 3yr EV Cost\nAvg 3yr Gas Cost\nAvg Savings\nStates with EV Savings\nStates with EV Loss\n\n\n\n\nFord Mustang Mach-E\nFord Mustang\n$4,940\n$5,107\n$167\n29\n22\n\n\nHyundai Ioniq 5\nHyundai Tucson\n$4,323\n$4,910\n$588\n38\n13\n\n\nFord F‑150 Lightning\nFord F‑150\n$7,410\n\\(6,383           |\\)-1,027\n9\n42\n\n\n\nHonda Prologue\nHonda Passport\n$4,631\n$5,803\n$1,172\n46\n5\n\n\nChevrolet Equinox EV\nChevrolet Equinox\n$4,477\n$4,560\n$83\n26\n25\n\n\nCadillac Lyriq\nCadillac XT5\n$5,094\n$6,079\n$985\n40\n11\n\n\nVolkswagen ID.4\nVolkswagen Tiguan\n$4,631\n$5,319\n$688\n38\n13\n\n\nNissan Ariya\nNissan Rogue\n$4,786\n\\(4,728           |\\)-57\n26\n25\n\n\n\nKia EV6\nKia Sportage\n$4,323\n$5,107\n$784\n40\n11"
+  },
+  {
+    "objectID": "index.html#key-insights",
+    "href": "index.html#key-insights",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "",
+    "text": "Best EV Value: Honda Prologue offers the highest average savings\nMost Challenging: Ford F-150 Lightning has the smallest savings advantage\nBest States for EVs: Washington, California, Utah\nMost Challenging States: West Virginia, Tennessee, Alabama\nNote: Savings calculations include only fuel/electricity costs and assume average driving patterns. Actual savings may vary based on individual driving habits, local incentives, and vehicle pricing."
+  },
+  {
+    "objectID": "index.html#vehicle-comparisons",
+    "href": "index.html#vehicle-comparisons",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "",
+    "text": "Comparing: Ford Mustang Mach-E vs Ford Mustang\nEV Efficiency: 0.32 kWh/mile | Gas Efficiency: 25 mpg\n\n\n\nComparing: Hyundai Ioniq 5 vs Hyundai Tucson\nEV Efficiency: 0.28 kWh/mile | Gas Efficiency: 26 mpg\n\n\n\nComparing: Ford F-150 Lightning vs Ford F-150\nEV Efficiency: 0.48 kWh/mile | Gas Efficiency: 20 mpg\n\n\n\nComparing: Honda Prologue vs Honda Passport\nEV Efficiency: 0.3 kWh/mile | Gas Efficiency: 22 mpg\n\n\n\nComparing: Chevrolet Equinox EV vs Chevrolet Equinox\nEV Efficiency: 0.29 kWh/mile | Gas Efficiency: 28 mpg\n\n\n\nComparing: Cadillac Lyriq vs Cadillac XT5\nEV Efficiency: 0.33 kWh/mile | Gas Efficiency: 21 mpg\n\n\n\nComparing: Volkswagen ID.4 vs Volkswagen Tiguan\nEV Efficiency: 0.3 kWh/mile | Gas Efficiency: 24 mpg\n\n\n\nComparing: Nissan Ariya vs Nissan Rogue\nEV Efficiency: 0.31 kWh/mile | Gas Efficiency: 27 mpg\n\n\n\nComparing: Kia EV6 vs Kia Sportage\nEV Efficiency: 0.28 kWh/mile | Gas Efficiency: 25 mpg"
+  },
+  {
+    "objectID": "index.html#all-vehicle-comparisons",
+    "href": "index.html#all-vehicle-comparisons",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "",
+    "text": "Since dynamic map updating requires a reactive framework, here are static maps for each vehicle comparison:\n\n\n\n\nComparing: Ford Mustang Mach-E vs Ford Mustang\nEV Efficiency: 0.32 kWh/mile | Gas Efficiency: 25 mpg\n\n\n\nComparing: Hyundai Ioniq 5 vs Hyundai Tucson\nEV Efficiency: 0.28 kWh/mile | Gas Efficiency: 26 mpg\n\n\n\nComparing: Ford F-150 Lightning vs Ford F-150\nEV Efficiency: 0.48 kWh/mile | Gas Efficiency: 20 mpg\n\n\n\nComparing: Honda Prologue vs Honda Passport\nEV Efficiency: 0.3 kWh/mile | Gas Efficiency: 22 mpg\n\n\n\nComparing: Chevrolet Equinox EV vs Chevrolet Equinox\nEV Efficiency: 0.29 kWh/mile | Gas Efficiency: 28 mpg\n\n\n\nComparing: Cadillac Lyriq vs Cadillac XT5\nEV Efficiency: 0.33 kWh/mile | Gas Efficiency: 21 mpg\n\n\n\nComparing: Volkswagen ID.4 vs Volkswagen Tiguan\nEV Efficiency: 0.3 kWh/mile | Gas Efficiency: 24 mpg\n\n\n\nComparing: Nissan Ariya vs Nissan Rogue\nEV Efficiency: 0.31 kWh/mile | Gas Efficiency: 27 mpg\n\n\n\nComparing: Kia EV6 vs Kia Sportage\nEV Efficiency: 0.28 kWh/mile | Gas Efficiency: 25 mpg"
+  },
+  {
+    "objectID": "index.html#column",
+    "href": "index.html#column",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "",
+    "text": "# Create vehicle choices for dropdown\nvehicle_choices &lt;- setNames(1:nrow(ev_vs_gas_cars), \n                           paste0(ev_vs_gas_cars$EV_Model, \" vs \", ev_vs_gas_cars$Gas_Model))\n\nselectInput(\"selected_vehicle\", \n            \"Choose Vehicle Comparison:\",\n            choices = vehicle_choices,\n            selected = 1)\n\n\nChoose Vehicle Comparison:\n\nFord Mustang Mach-E vs Ford Mustang\nHyundai Ioniq 5 vs Hyundai Tucson\nFord F-150 Lightning vs Ford F-150\nHonda Prologue vs Honda Passport\nChevrolet Equinox EV vs Chevrolet Equinox\nCadillac Lyriq vs Cadillac XT5\nVolkswagen ID.4 vs Volkswagen Tiguan\nNissan Ariya vs Nissan Rogue\nKia EV6 vs Kia Sportage\n\n\n\n\n\n\n\n\n\nrenderText({\n  req(input$selected_vehicle)\n  idx &lt;- as.numeric(input$selected_vehicle)\n  ev_name &lt;- ev_vs_gas_cars$EV_Model[idx]\n  gas_name &lt;- ev_vs_gas_cars$Gas_Model[idx]\n  ev_eff &lt;- ev_vs_gas_cars$EV_Efficiency[idx]\n  gas_eff &lt;- ev_vs_gas_cars$Gas_Efficiency[idx]\n  \n  paste0(\n    \"Comparing: \", ev_name, \" vs \", gas_name, \"\\n\\n\",\n    \"EV Efficiency: \", ev_eff, \" kWh/mile\\n\",\n    \"Gas Efficiency: \", gas_eff, \" mpg\\n\\n\",\n    \"Analysis based on 13,500 miles/year over 3 years\"\n  )\n})"
+  },
+  {
+    "objectID": "index.html#column-1",
+    "href": "index.html#column-1",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "",
+    "text": "create_cost_map &lt;- function(vehicle_index) {\n  ev_row &lt;- ev_vs_gas_cars[vehicle_index, ]\n  ev_name &lt;- ev_row$EV_Model\n  gas_name &lt;- ev_row$Gas_Model\n  ev_efficiency &lt;- ev_row$EV_Efficiency\n  gas_efficiency &lt;- ev_row$Gas_Efficiency\n\n  # Calculate model-specific costs\n  cost_data &lt;- combined_data %&gt;%\n    mutate(\n      model_ev_cost = Cost_per_kWh * (annual_miles * ev_efficiency) * 3,\n      model_gas_cost = Regular * (annual_miles / gas_efficiency) * 3,\n      model_cost_diff = model_gas_cost - model_ev_cost,\n      region = tolower(State)\n    ) %&gt;%\n    filter(region %in% states_sf$region)\n\n  # Join with spatial data\n  states_joined &lt;- states_sf %&gt;%\n    left_join(cost_data, by = \"region\")\n\n  # Create color palette - green for savings, red for losses\n  max_abs_diff &lt;- max(abs(states_joined$model_cost_diff), na.rm = TRUE)\n  pal &lt;- colorNumeric(\"RdYlGn\", \n                      domain = c(-max_abs_diff, max_abs_diff), \n                      reverse = TRUE)\n\n  # Create the map\n  leaflet(states_joined) %&gt;%\n    addProviderTiles(\"CartoDB.Positron\") %&gt;%\n    setView(lng = -98.35, lat = 39.50, zoom = 4) %&gt;%\n    addPolygons(\n      fillColor = ~pal(model_cost_diff),\n      fillOpacity = 0.7,\n      color = \"white\",\n      weight = 1,\n      highlight = highlightOptions(weight = 2, color = \"#666\", bringToFront = TRUE),\n      label = ~lapply(seq(nrow(states_joined)), function(i) {\n        savings_amount &lt;- round(states_joined$model_cost_diff[i], 0)\n        savings_text &lt;- ifelse(savings_amount &gt;= 0, \n                              paste0(\"$\", format(abs(savings_amount), big.mark = \",\"), \" saved\"),\n                              paste0(\"$\", format(abs(savings_amount), big.mark = \",\"), \" lost\"))\n        \n        HTML(paste0(\n          \"&lt;b&gt;\", tools::toTitleCase(states_joined$region[i]), \"&lt;/b&gt;&lt;br/&gt;\",\n          \"&lt;em&gt;\", gas_name, \" vs \", ev_name, \"&lt;/em&gt;&lt;br/&gt;\",\n          \"Gas (3yr): &lt;b&gt;$\", format(round(states_joined$model_gas_cost[i], 0), big.mark = \",\"), \"&lt;/b&gt;&lt;br/&gt;\",\n          \"EV (3yr): &lt;b&gt;$\", format(round(states_joined$model_ev_cost[i], 0), big.mark = \",\"), \"&lt;/b&gt;&lt;br/&gt;\",\n          \"EV vs Gas: &lt;b&gt;\", savings_text, \"&lt;/b&gt;\"\n        ))\n      }),\n      labelOptions = labelOptions(\n        noHide = FALSE,\n        style = list(\"font-weight\" = \"normal\", padding = \"3px 8px\"),\n        textsize = \"15px\",\n        direction = \"auto\",\n        opacity = 0.9,\n        sticky = TRUE\n      )\n    ) %&gt;%\n    addLegend(\n      pal = pal, \n      values = ~model_cost_diff, \n      title = HTML(paste0(\"&lt;b&gt;\", ev_name, \"&lt;/b&gt;&lt;br/&gt;vs&lt;br/&gt;&lt;b&gt;\", gas_name, \"&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;3-Year EV Savings\")), \n      position = \"bottomright\",\n      labFormat = labelFormat(prefix = \"$\", big.mark = \",\")\n    )\n}\n\nrenderLeaflet({\n  req(input$selected_vehicle)\n  create_cost_map(as.numeric(input$selected_vehicle))\n})\n\n\n\n\n\n\n\n\n# Create reactive summary data\nsummary_data &lt;- reactive({\n  map_dfr(1:nrow(ev_vs_gas_cars), function(i) {\n    ev_model &lt;- ev_vs_gas_cars$EV_Model[i]\n    gas_model &lt;- ev_vs_gas_cars$Gas_Model[i]\n    ev_efficiency &lt;- ev_vs_gas_cars$EV_Efficiency[i]\n    gas_efficiency &lt;- ev_vs_gas_cars$Gas_Efficiency[i]\n    \n    costs &lt;- combined_data %&gt;%\n      mutate(\n        model_ev_cost = Cost_per_kWh * (annual_miles * ev_efficiency) * 3,\n        model_gas_cost = Regular * (annual_miles / gas_efficiency) * 3,\n        model_cost_diff = model_gas_cost - model_ev_cost\n      )\n    \n    tibble(\n      `Vehicle Pair` = paste0(ev_model, \" vs \", gas_model),\n      `Avg EV Cost` = paste0(\"$\", format(round(mean(costs$model_ev_cost), 0), big.mark = \",\")),\n      `Avg Gas Cost` = paste0(\"$\", format(round(mean(costs$model_gas_cost), 0), big.mark = \",\")),\n      `Avg Savings` = paste0(\"$\", format(round(mean(costs$model_cost_diff), 0), big.mark = \",\")),\n      `States w/ Savings` = sum(costs$model_cost_diff &gt; 0),\n      `States w/ Losses` = sum(costs$model_cost_diff &lt; 0)\n    )\n  }) %&gt;%\n    arrange(desc(parse_number(`Avg Savings`)))\n})\n\nrenderDT({\n  datatable(summary_data(), \n            options = list(pageLength = 9, dom = 't'),\n            caption = \"3-Year Cost Comparison Summary\") %&gt;%\n    formatStyle(columns = \"Avg Savings\", \n                backgroundColor = styleInterval(0, c(\"#ffcccc\", \"#ccffcc\")))\n})"
+  },
+  {
+    "objectID": "index.html#vehicle-selection-overview",
+    "href": "index.html#vehicle-selection-overview",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "",
+    "text": "Available Vehicle Comparisons\n\n\nIndex\nVehicle Comparison\nEV Efficiency\nGas Efficiency\n\n\n\n\n1\nFord Mustang Mach-E vs Ford Mustang\n0.32 kWh/mile\n25 mpg\n\n\n2\nHyundai Ioniq 5 vs Hyundai Tucson\n0.28 kWh/mile\n26 mpg\n\n\n3\nFord F-150 Lightning vs Ford F-150\n0.48 kWh/mile\n20 mpg\n\n\n4\nHonda Prologue vs Honda Passport\n0.3 kWh/mile\n22 mpg\n\n\n5\nChevrolet Equinox EV vs Chevrolet Equinox\n0.29 kWh/mile\n28 mpg\n\n\n6\nCadillac Lyriq vs Cadillac XT5\n0.33 kWh/mile\n21 mpg\n\n\n7\nVolkswagen ID.4 vs Volkswagen Tiguan\n0.3 kWh/mile\n24 mpg\n\n\n8\nNissan Ariya vs Nissan Rogue\n0.31 kWh/mile\n27 mpg\n\n\n9\nKia EV6 vs Kia Sportage\n0.28 kWh/mile\n25 mpg"
+  },
+  {
+    "objectID": "index.html#vehicle-details-function",
+    "href": "index.html#vehicle-details-function",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "",
+    "text": "# Function to display vehicle details (mirrors original renderText)\ndisplay_vehicle_details &lt;- function(selected_vehicle_idx) {\n  idx &lt;- as.numeric(selected_vehicle_idx)\n  ev_name &lt;- ev_vs_gas_cars$EV_Model[idx]\n  gas_name &lt;- ev_vs_gas_cars$Gas_Model[idx]\n  ev_eff &lt;- ev_vs_gas_cars$EV_Efficiency[idx]\n  gas_eff &lt;- ev_vs_gas_cars$Gas_Efficiency[idx]\n  \n  cat(\"Comparing:\", ev_name, \"vs\", gas_name, \"\\n\\n\")\n  cat(\"EV Efficiency:\", ev_eff, \"kWh/mile\\n\")\n  cat(\"Gas Efficiency:\", gas_eff, \"mpg\\n\\n\")\n  cat(\"Analysis based on 13,500 miles/year over 3 years\\n\")\n}"
+  },
+  {
+    "objectID": "index.html#cost-comparison-map-function",
+    "href": "index.html#cost-comparison-map-function",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "",
+    "text": "# Function to create cost map (mirrors original create_cost_map)\ncreate_cost_map &lt;- function(vehicle_index) {\n  ev_row &lt;- ev_vs_gas_cars[vehicle_index, ]\n  ev_name &lt;- ev_row$EV_Model\n  gas_name &lt;- ev_row$Gas_Model\n  ev_efficiency &lt;- ev_row$EV_Efficiency\n  gas_efficiency &lt;- ev_row$Gas_Efficiency\n\n  # Calculate model-specific costs\n  cost_data &lt;- combined_data %&gt;%\n    mutate(\n      model_ev_cost = Cost_per_kWh * (annual_miles * ev_efficiency) * 3,\n      model_gas_cost = Regular * (annual_miles / gas_efficiency) * 3,\n      model_cost_diff = model_gas_cost - model_ev_cost,\n      region = tolower(State)\n    ) %&gt;%\n    filter(region %in% states_sf$region)\n\n  # Join with spatial data\n  states_joined &lt;- states_sf %&gt;%\n    left_join(cost_data, by = \"region\")\n\n  # Create color palette - green for savings, red for losses\n  max_abs_diff &lt;- max(abs(states_joined$model_cost_diff), na.rm = TRUE)\n  pal &lt;- colorNumeric(\"RdYlGn\", \n                      domain = c(-max_abs_diff, max_abs_diff), \n                      reverse = TRUE)\n\n  # Create the map\n  leaflet(states_joined) %&gt;%\n    addProviderTiles(\"CartoDB.Positron\") %&gt;%\n    setView(lng = -98.35, lat = 39.50, zoom = 4) %&gt;%\n    addPolygons(\n      fillColor = ~pal(model_cost_diff),\n      fillOpacity = 0.7,\n      color = \"white\",\n      weight = 1,\n      highlight = highlightOptions(weight = 2, color = \"#666\", bringToFront = TRUE),\n      label = ~lapply(seq(nrow(states_joined)), function(i) {\n        savings_amount &lt;- round(states_joined$model_cost_diff[i], 0)\n        savings_text &lt;- ifelse(savings_amount &gt;= 0, \n                              paste0(\"$\", format(abs(savings_amount), big.mark = \",\"), \" saved\"),\n                              paste0(\"$\", format(abs(savings_amount), big.mark = \",\"), \" lost\"))\n        \n        HTML(paste0(\n          \"&lt;b&gt;\", tools::toTitleCase(states_joined$region[i]), \"&lt;/b&gt;&lt;br/&gt;\",\n          \"&lt;em&gt;\", gas_name, \" vs \", ev_name, \"&lt;/em&gt;&lt;br/&gt;\",\n          \"Gas (3yr): &lt;b&gt;$\", format(round(states_joined$model_gas_cost[i], 0), big.mark = \",\"), \"&lt;/b&gt;&lt;br/&gt;\",\n          \"EV (3yr): &lt;b&gt;$\", format(round(states_joined$model_ev_cost[i], 0), big.mark = \",\"), \"&lt;/b&gt;&lt;br/&gt;\",\n          \"EV vs Gas: &lt;b&gt;\", savings_text, \"&lt;/b&gt;\"\n        ))\n      }),\n      labelOptions = labelOptions(\n        noHide = FALSE,\n        style = list(\"font-weight\" = \"normal\", padding = \"3px 8px\"),\n        textsize = \"15px\",\n        direction = \"auto\",\n        opacity = 0.9,\n        sticky = TRUE\n      )\n    ) %&gt;%\n    addLegend(\n      pal = pal, \n      values = ~model_cost_diff, \n      title = HTML(paste0(\"&lt;b&gt;\", ev_name, \"&lt;/b&gt;&lt;br/&gt;vs&lt;br/&gt;&lt;b&gt;\", gas_name, \"&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;3-Year EV Savings\")), \n      position = \"bottomright\",\n      labFormat = labelFormat(prefix = \"$\", big.mark = \",\")\n    )\n}"
+  },
+  {
+    "objectID": "index.html#summary-statistics-function",
+    "href": "index.html#summary-statistics-function",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "",
+    "text": "# Create summary data function (mirrors original reactive summary_data)\ncreate_summary_data &lt;- function() {\n  map_dfr(1:nrow(ev_vs_gas_cars), function(i) {\n    ev_model &lt;- ev_vs_gas_cars$EV_Model[i]\n    gas_model &lt;- ev_vs_gas_cars$Gas_Model[i]\n    ev_efficiency &lt;- ev_vs_gas_cars$EV_Efficiency[i]\n    gas_efficiency &lt;- ev_vs_gas_cars$Gas_Efficiency[i]\n    \n    costs &lt;- combined_data %&gt;%\n      mutate(\n        model_ev_cost = Cost_per_kWh * (annual_miles * ev_efficiency) * 3,\n        model_gas_cost = Regular * (annual_miles / gas_efficiency) * 3,\n        model_cost_diff = model_gas_cost - model_ev_cost\n      )\n    \n    tibble(\n      `Vehicle Pair` = paste0(ev_model, \" vs \", gas_model),\n      `Avg EV Cost` = paste0(\"$\", format(round(mean(costs$model_ev_cost), 0), big.mark = \",\")),\n      `Avg Gas Cost` = paste0(\"$\", format(round(mean(costs$model_gas_cost), 0), big.mark = \",\")),\n      `Avg Savings` = paste0(\"$\", format(round(mean(costs$model_cost_diff), 0), big.mark = \",\")),\n      `States w/ Savings` = sum(costs$model_cost_diff &gt; 0),\n      `States w/ Losses` = sum(costs$model_cost_diff &lt; 0)\n    )\n  }) %&gt;%\n    arrange(desc(parse_number(`Avg Savings`)))\n}"
+  },
+  {
+    "objectID": "index.html#overall-summary-statistics",
+    "href": "index.html#overall-summary-statistics",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "Overall Summary Statistics",
+    "text": "Overall Summary Statistics"
+  },
+  {
+    "objectID": "index.html#ford-mustang-mach-e-vs-ford-mustang",
+    "href": "index.html#ford-mustang-mach-e-vs-ford-mustang",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "1. Ford Mustang Mach-E vs Ford Mustang",
+    "text": "1. Ford Mustang Mach-E vs Ford Mustang\n\n\nComparing: Ford Mustang Mach-E vs Ford Mustang \n\nEV Efficiency: 0.32 kWh/mile\nGas Efficiency: 25 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "index.html#hyundai-ioniq-5-vs-hyundai-tucson",
+    "href": "index.html#hyundai-ioniq-5-vs-hyundai-tucson",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "2. Hyundai Ioniq 5 vs Hyundai Tucson",
+    "text": "2. Hyundai Ioniq 5 vs Hyundai Tucson\n\n\nComparing: Hyundai Ioniq 5 vs Hyundai Tucson \n\nEV Efficiency: 0.28 kWh/mile\nGas Efficiency: 26 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "index.html#ford-f-150-lightning-vs-ford-f-150",
+    "href": "index.html#ford-f-150-lightning-vs-ford-f-150",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "3. Ford F-150 Lightning vs Ford F-150",
+    "text": "3. Ford F-150 Lightning vs Ford F-150\n\n\nComparing: Ford F-150 Lightning vs Ford F-150 \n\nEV Efficiency: 0.48 kWh/mile\nGas Efficiency: 20 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "index.html#honda-prologue-vs-honda-passport",
+    "href": "index.html#honda-prologue-vs-honda-passport",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "4. Honda Prologue vs Honda Passport",
+    "text": "4. Honda Prologue vs Honda Passport\n\n\nComparing: Honda Prologue vs Honda Passport \n\nEV Efficiency: 0.3 kWh/mile\nGas Efficiency: 22 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "index.html#chevrolet-equinox-ev-vs-chevrolet-equinox",
+    "href": "index.html#chevrolet-equinox-ev-vs-chevrolet-equinox",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "5. Chevrolet Equinox EV vs Chevrolet Equinox",
+    "text": "5. Chevrolet Equinox EV vs Chevrolet Equinox\n\n\nComparing: Chevrolet Equinox EV vs Chevrolet Equinox \n\nEV Efficiency: 0.29 kWh/mile\nGas Efficiency: 28 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "index.html#cadillac-lyriq-vs-cadillac-xt5",
+    "href": "index.html#cadillac-lyriq-vs-cadillac-xt5",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "6. Cadillac Lyriq vs Cadillac XT5",
+    "text": "6. Cadillac Lyriq vs Cadillac XT5\n\n\nComparing: Cadillac Lyriq vs Cadillac XT5 \n\nEV Efficiency: 0.33 kWh/mile\nGas Efficiency: 21 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "index.html#volkswagen-id.4-vs-volkswagen-tiguan",
+    "href": "index.html#volkswagen-id.4-vs-volkswagen-tiguan",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "7. Volkswagen ID.4 vs Volkswagen Tiguan",
+    "text": "7. Volkswagen ID.4 vs Volkswagen Tiguan\n\n\nComparing: Volkswagen ID.4 vs Volkswagen Tiguan \n\nEV Efficiency: 0.3 kWh/mile\nGas Efficiency: 24 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "index.html#nissan-ariya-vs-nissan-rogue",
+    "href": "index.html#nissan-ariya-vs-nissan-rogue",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "8. Nissan Ariya vs Nissan Rogue",
+    "text": "8. Nissan Ariya vs Nissan Rogue\n\n\nComparing: Nissan Ariya vs Nissan Rogue \n\nEV Efficiency: 0.31 kWh/mile\nGas Efficiency: 27 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "index.html#kia-ev6-vs-kia-sportage",
+    "href": "index.html#kia-ev6-vs-kia-sportage",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "9. Kia EV6 vs Kia Sportage",
+    "text": "9. Kia EV6 vs Kia Sportage\n\n\nComparing: Kia EV6 vs Kia Sportage \n\nEV Efficiency: 0.28 kWh/mile\nGas Efficiency: 25 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "index.html#state-by-state-breakdown-for-best-vehicle-comparison",
+    "href": "index.html#state-by-state-breakdown-for-best-vehicle-comparison",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "State-by-State Breakdown for Best Vehicle Comparison",
+    "text": "State-by-State Breakdown for Best Vehicle Comparison\n\n\nBest overall vehicle comparison: Honda Prologue vs Honda Passport\n\n\n\n\nState-by-State Cost Breakdown: Honda Prologue vs Honda Passport\n\n\nState\nEV Cost (3yr)\nGas Cost (3yr)\nSavings\n\n\n\n\nWashington\n$4,228\n$8,072\n$3,844\n\n\nCalifornia\n$4,666\n$8,234\n$3,569\n\n\nUtah\n$3,487\n$6,182\n$2,695\n\n\nOregon\n$4,763\n$7,325\n$2,562\n\n\nHawaii\n$5,686\n$8,220\n$2,533\n\n\nMaryland\n$3,438\n$5,720\n$2,281\n\n\nKansas\n$3,062\n$5,248\n$2,187\n\n\nWashington D.C.\n$4,095\n$6,128\n$2,034\n\n\nNevada\n$4,921\n$6,822\n$1,902\n\n\nMissouri\n$3,378\n$5,254\n$1,876\n\n\nNebraska\n$3,633\n$5,480\n$1,848\n\n\nDelaware\n$3,900\n$5,655\n$1,755\n\n\nVermont\n$4,070\n$5,694\n$1,624\n\n\nIdaho\n$4,787\n$6,401\n$1,614\n\n\nIllinois\n$4,653\n$6,237\n$1,584\n\n\nNew York\n$4,301\n$5,830\n$1,529\n\n\nColorado\n$4,058\n$5,567\n$1,509\n\n\nPennsylvania\n$4,410\n$5,898\n$1,488\n\n\nMichigan\n$4,508\n$5,976\n$1,468\n\n\nMassachusetts\n$4,180\n$5,606\n$1,426\n\n\nSouth Dakota\n$4,143\n$5,519\n$1,376\n\n\nVirginia\n$4,167\n$5,534\n$1,366\n\n\nRhode Island\n$4,216\n$5,567\n$1,351\n\n\nIowa\n$4,143\n$5,456\n$1,313\n\n\nConnecticut\n$4,471\n$5,723\n$1,252\n\n\nNorth Carolina\n$4,082\n$5,306\n$1,223\n\n\nIndiana\n$4,617\n$5,664\n$1,047\n\n\nMaine\n$4,641\n$5,661\n$1,019\n\n\nWyoming\n$4,690\n$5,703\n$1,013\n\n\nFlorida\n$4,751\n$5,749\n$ 999\n\n\nNew Mexico\n$4,520\n$5,438\n$ 918\n\n\nMinnesota\n$4,593\n$5,502\n$ 910\n\n\nNew Jersey\n$4,714\n$5,583\n$ 869\n\n\nOhio\n$4,896\n$5,725\n$ 829\n\n\nArizona\n$5,091\n$5,839\n$ 749\n\n\nAlaska\n$6,196\n$6,926\n$ 729\n\n\nGeorgia\n$4,653\n$5,372\n$ 718\n\n\nTexas\n$4,435\n$5,103\n$ 668\n\n\nMontana\n$5,528\n$5,981\n$ 453\n\n\nMississippi\n$4,641\n$4,983\n$ 342\n\n\nNew Hampshire\n$5,273\n$5,501\n$ 228\n\n\nKentucky\n$5,164\n$5,372\n$ 208\n\n\nNorth Dakota\n$5,152\n$5,353\n$ 202\n\n\nOklahoma\n$4,945\n$5,088\n$ 143\n\n\nWisconsin\n$5,212\n$5,350\n$ 137\n\n\nArkansas\n$5,152\n$5,175\n$ 23\n\n\nLouisiana\n$5,188\n$5,099\n$ -89\n\n\nSouth Carolina\n$5,346\n$5,188\n$ -158\n\n\nAlabama\n$5,310\n$5,134\n$ -175\n\n\nTennessee\n$5,674\n$5,140\n$ -534\n\n\nWest Virginia\n$6,367\n$5,670\n$ -697"
+  },
+  {
+    "objectID": "index.html#summary-insights",
+    "href": "index.html#summary-insights",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "Summary Insights",
+    "text": "Summary Insights\n\n\nKey Insights:\n\n\n=============\n\n\n- Best vehicle comparison: Honda Prologue vs Honda Passport \n\n\n- Average savings across all comparisons: $ 376 \n\n\n- Analysis based on 13,500 miles per year over 3 years\n\n\n- Green areas on maps indicate EV savings, red areas indicate gas is cheaper"
   }
 ]

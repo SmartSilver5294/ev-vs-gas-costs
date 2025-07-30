@@ -5,27 +5,24 @@ execute:
     echo: false
     message: false
     warning: false
+output: 
+  html_document:
+    theme: default
+    toc: true
+    toc_float: true
 ---
 
-```{r}
-#| label: Load Libraries
-library(tidyverse)
-library(primer.data)
-library(marginaleffects)
-library(readr)
-library(dplyr)
-library(parsnip)
-library(tibble)
+```{r setup, include=FALSE}
 library(leaflet)
+library(tidyverse)
 library(sf)
-library(htmltools)
 library(maps)
-```
+library(DT)
+library(knitr)
+library(kableExtra)
+library(htmltools)  # For HTML() function
 
-```{r}
-#| label: Data 
-#| message: false
-#| warning: false
+# Data setup
 gas_prices <- read.csv(text = "
 State,Regular
 Alaska,3.762
@@ -80,8 +77,6 @@ Wisconsin,2.906
 West Virginia,3.080
 Wyoming,3.098
 ", header = TRUE)
-
-
 
 ev_prices <- read.csv(text = "
 State,Cost_per_kWh
@@ -138,90 +133,388 @@ West Virginia,0.524
 Wyoming,0.386
 ", header = TRUE)
 
+ev_vs_gas_cars <- data.frame(
+  EV_Model = c("Ford Mustang Mach-E", "Hyundai Ioniq 5", "Ford F-150 Lightning", 
+               "Honda Prologue", "Chevrolet Equinox EV", "Cadillac Lyriq", 
+               "Volkswagen ID.4", "Nissan Ariya", "Kia EV6"),
+  Gas_Model = c("Ford Mustang", "Hyundai Tucson", "Ford F-150", 
+                "Honda Passport", "Chevrolet Equinox", "Cadillac XT5", 
+                "Volkswagen Tiguan", "Nissan Rogue", "Kia Sportage"),
+  EV_Efficiency = c(0.32, 0.28, 0.48, 0.30, 0.29, 0.33, 0.30, 0.31, 0.28),
+  Gas_Efficiency = c(25, 26, 20, 22, 28, 21, 24, 27, 25),
+  stringsAsFactors = FALSE
+)
 
-
-# Convert data.frames to tibbles
+# Convert to tibbles and join data
 gas_prices <- as_tibble(gas_prices)
 ev_prices <- as_tibble(ev_prices)
 combined_data <- left_join(gas_prices, ev_prices, by = "State")
-
-combined_data <- combined_data |> 
-  mutate(
-    EV_3yr_Cost = Cost_per_kWh * 4050 * 3,
-    Gas_3yr_Cost = Regular * 540 * 3
-  )
-
-combined_data <- combined_data %>%
-  mutate(
-    cost_diff = Gas_3yr_Cost - EV_3yr_Cost
-  )
-
-
-
+ev_vs_gas_cars <- as_tibble(ev_vs_gas_cars)
 
 # Constants
 annual_miles <- 13500
-ev_efficiency_kWh_per_mile <- 0.3
-gas_efficiency_mpg <- 25
 
-# add counties to each state possibly? Myabe add the leading countries and not just US
-combined_data
-linear_reg()|> fit(Gas_3yr_Cost ~ EV_3yr_Cost + Regular + Cost_per_kWh, data = combined_data)
+# Setup spatial data
+states_sf <- st_as_sf(map("state", plot = FALSE, fill = TRUE)) %>%
+  mutate(region = tolower(ID))
 ```
 
+# EV vs Gas Cost Comparison
 
-```{r}
-#| label: Interactive Plot
-# Get US state map data and convert to polygons
-# Load US map data with 'sf' (state boundaries)
-# Prepare state map data from 'maps' package
-states_map <- map("state", fill = TRUE, plot = FALSE)
-states_sf <- st_as_sf(states_map)
+## Vehicle Selection Overview
 
-# Add lowercase region for join
-combined_data <- combined_data %>% mutate(region = tolower(State))
+```{r vehicle_choices}
+# Create vehicle choices overview
+vehicle_choices <- tibble(
+  Index = 1:nrow(ev_vs_gas_cars),
+  Comparison = paste0(ev_vs_gas_cars$EV_Model, " vs ", ev_vs_gas_cars$Gas_Model),
+  EV_Efficiency = paste0(ev_vs_gas_cars$EV_Efficiency, " kWh/mile"),
+  Gas_Efficiency = paste0(ev_vs_gas_cars$Gas_Efficiency, " mpg")
+)
 
-# Join the cost data to the shapefile
-states_sf <- states_sf %>% 
-  rename(region = ID) %>%
-  left_join(combined_data, by = "region")
+kable(vehicle_choices, 
+      caption = "Available Vehicle Comparisons",
+      col.names = c("Index", "Vehicle Comparison", "EV Efficiency", "Gas Efficiency")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
 
-# Color palette for cost difference
-pal <- colorNumeric("RdYlGn", domain = states_sf$cost_diff, reverse = TRUE)
+## Vehicle Details Function
 
-# Build leaflet map
-leaflet(states_sf) %>%
-  addProviderTiles("CartoDB.Positron") %>%
-  addPolygons(
-    fillColor = ~pal(cost_diff),
-    fillOpacity = 0.7,
-    color = "white",
-    weight = 1,
-    highlight = highlightOptions(
-      weight = 2,
-      color = "#666",
-      fillOpacity = 0.9,
-      bringToFront = TRUE
-    ),
-    label = ~lapply(paste0(
-      "<strong>", State, "</strong><br/>",
-      "Gas 3-yr: $", round(Gas_3yr_Cost, 2), "<br/>",
-      "EV 3-yr: $", round(EV_3yr_Cost, 2), "<br/>",
-      "Overall: ", ifelse(cost_diff > 0,
-             paste0("$", round(cost_diff, 2), " saved"),
-             paste0("$", round(abs(cost_diff), 2), " lost"))
-    ), HTML),
-    labelOptions = labelOptions(
-      style = list("font-weight" = "normal", padding = "3px 8px"),
-      textsize = "13px",
-      direction = "auto"
+```{r vehicle_details_function}
+# Function to display vehicle details (mirrors original renderText)
+display_vehicle_details <- function(selected_vehicle_idx) {
+  idx <- as.numeric(selected_vehicle_idx)
+  ev_name <- ev_vs_gas_cars$EV_Model[idx]
+  gas_name <- ev_vs_gas_cars$Gas_Model[idx]
+  ev_eff <- ev_vs_gas_cars$EV_Efficiency[idx]
+  gas_eff <- ev_vs_gas_cars$Gas_Efficiency[idx]
+  
+  cat("Comparing:", ev_name, "vs", gas_name, "\n\n")
+  cat("EV Efficiency:", ev_eff, "kWh/mile\n")
+  cat("Gas Efficiency:", gas_eff, "mpg\n\n")
+  cat("Analysis based on 13,500 miles/year over 3 years\n")
+}
+```
+
+## Cost Comparison Map Function
+
+```{r cost_map_function}
+# Function to create cost map (mirrors original create_cost_map)
+create_cost_map <- function(vehicle_index) {
+  ev_row <- ev_vs_gas_cars[vehicle_index, ]
+  ev_name <- ev_row$EV_Model
+  gas_name <- ev_row$Gas_Model
+  ev_efficiency <- ev_row$EV_Efficiency
+  gas_efficiency <- ev_row$Gas_Efficiency
+
+  # Calculate model-specific costs
+  cost_data <- combined_data %>%
+    mutate(
+      model_ev_cost = Cost_per_kWh * (annual_miles * ev_efficiency) * 3,
+      model_gas_cost = Regular * (annual_miles / gas_efficiency) * 3,
+      model_cost_diff = model_gas_cost - model_ev_cost,
+      region = tolower(State)
+    ) %>%
+    filter(region %in% states_sf$region)
+
+  # Join with spatial data
+  states_joined <- states_sf %>%
+    left_join(cost_data, by = "region")
+
+  # Create color palette - green for savings, red for losses
+  max_abs_diff <- max(abs(states_joined$model_cost_diff), na.rm = TRUE)
+  pal <- colorNumeric("RdYlGn", 
+                      domain = c(-max_abs_diff, max_abs_diff), 
+                      reverse = TRUE)
+
+  # Create the map
+  leaflet(states_joined) %>%
+    addProviderTiles("CartoDB.Positron") %>%
+    setView(lng = -98.35, lat = 39.50, zoom = 4) %>%
+    addPolygons(
+      fillColor = ~pal(model_cost_diff),
+      fillOpacity = 0.7,
+      color = "white",
+      weight = 1,
+      highlight = highlightOptions(weight = 2, color = "#666", bringToFront = TRUE),
+      label = ~lapply(seq(nrow(states_joined)), function(i) {
+        savings_amount <- round(states_joined$model_cost_diff[i], 0)
+        savings_text <- ifelse(savings_amount >= 0, 
+                              paste0("$", format(abs(savings_amount), big.mark = ","), " saved"),
+                              paste0("$", format(abs(savings_amount), big.mark = ","), " lost"))
+        
+        HTML(paste0(
+          "<b>", tools::toTitleCase(states_joined$region[i]), "</b><br/>",
+          "<em>", gas_name, " vs ", ev_name, "</em><br/>",
+          "Gas (3yr): <b>$", format(round(states_joined$model_gas_cost[i], 0), big.mark = ","), "</b><br/>",
+          "EV (3yr): <b>$", format(round(states_joined$model_ev_cost[i], 0), big.mark = ","), "</b><br/>",
+          "EV vs Gas: <b>", savings_text, "</b>"
+        ))
+      }),
+      labelOptions = labelOptions(
+        noHide = FALSE,
+        style = list("font-weight" = "normal", padding = "3px 8px"),
+        textsize = "15px",
+        direction = "auto",
+        opacity = 0.9,
+        sticky = TRUE
+      )
+    ) %>%
+    addLegend(
+      pal = pal, 
+      values = ~model_cost_diff, 
+      title = HTML(paste0("<b>", ev_name, "</b><br/>vs<br/><b>", gas_name, "</b><br/><br/>3-Year EV Savings")), 
+      position = "bottomright",
+      labFormat = labelFormat(prefix = "$", big.mark = ",")
     )
+}
+```
+
+## Summary Statistics Function
+
+```{r summary_stats_function}
+# Create summary data function (mirrors original reactive summary_data)
+create_summary_data <- function() {
+  map_dfr(1:nrow(ev_vs_gas_cars), function(i) {
+    ev_model <- ev_vs_gas_cars$EV_Model[i]
+    gas_model <- ev_vs_gas_cars$Gas_Model[i]
+    ev_efficiency <- ev_vs_gas_cars$EV_Efficiency[i]
+    gas_efficiency <- ev_vs_gas_cars$Gas_Efficiency[i]
+    
+    costs <- combined_data %>%
+      mutate(
+        model_ev_cost = Cost_per_kWh * (annual_miles * ev_efficiency) * 3,
+        model_gas_cost = Regular * (annual_miles / gas_efficiency) * 3,
+        model_cost_diff = model_gas_cost - model_ev_cost
+      )
+    
+    tibble(
+      `Vehicle Pair` = paste0(ev_model, " vs ", gas_model),
+      `Avg EV Cost` = paste0("$", format(round(mean(costs$model_ev_cost), 0), big.mark = ",")),
+      `Avg Gas Cost` = paste0("$", format(round(mean(costs$model_gas_cost), 0), big.mark = ",")),
+      `Avg Savings` = paste0("$", format(round(mean(costs$model_cost_diff), 0), big.mark = ",")),
+      `States w/ Savings` = sum(costs$model_cost_diff > 0),
+      `States w/ Losses` = sum(costs$model_cost_diff < 0)
+    )
+  }) %>%
+    arrange(desc(parse_number(`Avg Savings`)))
+}
+```
+
+---
+
+# Analysis Results
+
+## Overall Summary Statistics
+
+```{r overall_summary}
+# Display overall summary table
+summary_data <- create_summary_data()
+
+datatable(summary_data, 
+          options = list(pageLength = 9, dom = 't'),
+          caption = "3-Year Cost Comparison Summary") %>%
+  formatStyle(columns = "Avg Savings", 
+              backgroundColor = styleInterval(0, c("#ffcccc", "#ccffcc")))
+```
+
+---
+
+# Individual Vehicle Comparisons
+
+## 1. Ford Mustang Mach-E vs Ford Mustang
+
+```{r vehicle_1}
+# Vehicle 1 Details
+display_vehicle_details(1)
+```
+
+```{r vehicle_1_map}
+# Vehicle 1 Map
+create_cost_map(1)
+```
+
+---
+
+## 2. Hyundai Ioniq 5 vs Hyundai Tucson
+
+```{r vehicle_2}
+# Vehicle 2 Details
+display_vehicle_details(2)
+```
+
+```{r vehicle_2_map}
+# Vehicle 2 Map
+create_cost_map(2)
+```
+
+---
+
+## 3. Ford F-150 Lightning vs Ford F-150
+
+```{r vehicle_3}
+# Vehicle 3 Details
+display_vehicle_details(3)
+```
+
+```{r vehicle_3_map}
+# Vehicle 3 Map
+create_cost_map(3)
+```
+
+---
+
+## 4. Honda Prologue vs Honda Passport
+
+```{r vehicle_4}
+# Vehicle 4 Details
+display_vehicle_details(4)
+```
+
+```{r vehicle_4_map}
+# Vehicle 4 Map
+create_cost_map(4)
+```
+
+---
+
+## 5. Chevrolet Equinox EV vs Chevrolet Equinox
+
+```{r vehicle_5}
+# Vehicle 5 Details
+display_vehicle_details(5)
+```
+
+```{r vehicle_5_map}
+# Vehicle 5 Map
+create_cost_map(5)
+```
+
+---
+
+## 6. Cadillac Lyriq vs Cadillac XT5
+
+```{r vehicle_6}
+# Vehicle 6 Details
+display_vehicle_details(6)
+```
+
+```{r vehicle_6_map}
+# Vehicle 6 Map
+create_cost_map(6)
+```
+
+---
+
+## 7. Volkswagen ID.4 vs Volkswagen Tiguan
+
+```{r vehicle_7}
+# Vehicle 7 Details
+display_vehicle_details(7)
+```
+
+```{r vehicle_7_map}
+# Vehicle 7 Map
+create_cost_map(7)
+```
+
+---
+
+## 8. Nissan Ariya vs Nissan Rogue
+
+```{r vehicle_8}
+# Vehicle 8 Details
+display_vehicle_details(8)
+```
+
+```{r vehicle_8_map}
+# Vehicle 8 Map
+create_cost_map(8)
+```
+
+---
+
+## 9. Kia EV6 vs Kia Sportage
+
+```{r vehicle_9}
+# Vehicle 9 Details
+display_vehicle_details(9)
+```
+
+```{r vehicle_9_map}
+# Vehicle 9 Map
+create_cost_map(9)
+```
+
+---
+
+# Additional Analysis
+
+## State-by-State Breakdown for Best Vehicle Comparison
+
+```{r best_vehicle_analysis}
+# Find the best performing vehicle comparison
+best_vehicle_idx <- which.max(sapply(1:nrow(ev_vs_gas_cars), function(i) {
+  ev_row <- ev_vs_gas_cars[i, ]
+  ev_efficiency <- ev_row$EV_Efficiency
+  gas_efficiency <- ev_row$Gas_Efficiency
+  
+  costs <- combined_data %>%
+    mutate(
+      model_ev_cost = Cost_per_kWh * (annual_miles * ev_efficiency) * 3,
+      model_gas_cost = Regular * (annual_miles / gas_efficiency) * 3,
+      model_cost_diff = model_gas_cost - model_ev_cost
+    )
+  
+  mean(costs$model_cost_diff)
+}))
+
+best_vehicle <- ev_vs_gas_cars[best_vehicle_idx, ]
+cat("Best overall vehicle comparison:", best_vehicle$EV_Model, "vs", best_vehicle$Gas_Model)
+
+# Calculate detailed costs for best vehicle
+ev_efficiency <- best_vehicle$EV_Efficiency
+gas_efficiency <- best_vehicle$Gas_Efficiency
+
+detailed_costs <- combined_data %>%
+  mutate(
+    model_ev_cost = Cost_per_kWh * (annual_miles * ev_efficiency) * 3,
+    model_gas_cost = Regular * (annual_miles / gas_efficiency) * 3,
+    model_cost_diff = model_gas_cost - model_ev_cost
   ) %>%
-  addLegend(
-    pal = pal,
-    values = ~cost_diff,
-    title = "Gas - EV 3yr Cost Diff",
-    position = "bottomright",
-    labFormat = labelFormat(prefix = "$")
-  )
+  arrange(desc(model_cost_diff)) %>%
+  mutate(
+    `EV Cost (3yr)` = paste0("$", format(round(model_ev_cost, 0), big.mark = ",")),
+    `Gas Cost (3yr)` = paste0("$", format(round(model_gas_cost, 0), big.mark = ",")),
+    `Savings` = paste0("$", format(round(model_cost_diff, 0), big.mark = ","))
+  ) %>%
+  select(State, `EV Cost (3yr)`, `Gas Cost (3yr)`, `Savings`)
+
+kable(detailed_costs, 
+      caption = paste("State-by-State Cost Breakdown:", best_vehicle$EV_Model, "vs", best_vehicle$Gas_Model)) %>%
+  kable_styling(bootstrap_options = c("striped", "hover")) %>%
+  scroll_box(height = "400px")
+```
+
+## Summary Insights
+
+```{r summary_insights}
+# Calculate overall insights
+all_savings <- map_dbl(1:nrow(ev_vs_gas_cars), function(i) {
+  ev_row <- ev_vs_gas_cars[i, ]
+  costs <- combined_data %>%
+    mutate(
+      model_ev_cost = Cost_per_kWh * (annual_miles * ev_row$EV_Efficiency) * 3,
+      model_gas_cost = Regular * (annual_miles / ev_row$Gas_Efficiency) * 3,
+      model_cost_diff = model_gas_cost - model_ev_cost
+    )
+  mean(costs$model_cost_diff)
+})
+
+cat("Key Insights:\n")
+cat("=============\n")
+cat("- Best vehicle comparison:", ev_vs_gas_cars$EV_Model[which.max(all_savings)], "vs", ev_vs_gas_cars$Gas_Model[which.max(all_savings)], "\n")
+cat("- Average savings across all comparisons: $", format(round(mean(all_savings), 0), big.mark = ","), "\n")
+cat("- Analysis based on 13,500 miles per year over 3 years\n")
+cat("- Green areas on maps indicate EV savings, red areas indicate gas is cheaper\n")
 ```
