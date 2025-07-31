@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "This site was made for Kane’s Data Science Bootcamp"
   },
   {
     "objectID": "index.html",
@@ -102,6 +102,6 @@
     "href": "index.html#summary-insights",
     "title": "EV Charging vs Gas Costs Over 3 Years",
     "section": "Summary Insights",
-    "text": "Summary Insights\n\n\nKey Insights:\n\n\n=============\n\n\n- Best vehicle comparison: Honda Prologue vs Honda Passport \n\n\n- Average savings across all comparisons: $ 376 \n\n\n- Analysis based on 13,500 miles per year over 3 years\n\n\n- Green areas on maps indicate EV savings, red areas indicate gas is cheaper"
+    "text": "Summary Insights\n\n\nKey Insights:\n\n\n=============\n\n\n- Best vehicle comparison: Honda Prologue vs Honda Passport \n\n\n- Average savings across all comparisons: $ 376 \n\n\n- Analysis based on 13,500 miles per year over 3 years"
   }
 ]
