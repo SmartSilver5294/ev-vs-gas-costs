@@ -10,7 +10,7 @@ website:
       - text: Graphs
         menu:
           - href: test.qmd
-            text: Graph 1
+            text: Average Costs Graph
       - about.qmd
 
 format:

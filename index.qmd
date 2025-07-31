@@ -178,9 +178,9 @@ kable(vehicle_choices,
   kable_styling(bootstrap_options = c("striped", "hover"))
 ```
 
-## Vehicle Details Function
 
 ```{r vehicle_details_function}
+#Vehicle Details Function
 # Function to display vehicle details (mirrors original renderText)
 display_vehicle_details <- function(selected_vehicle_idx) {
   idx <- as.numeric(selected_vehicle_idx)
@@ -196,9 +196,9 @@ display_vehicle_details <- function(selected_vehicle_idx) {
 }
 ```
 
-## Cost Comparison Map Function
 
 ```{r cost_map_function}
+# Cost Comparison Map Function
 # Function to create cost map (mirrors original create_cost_map)
 create_cost_map <- function(vehicle_index) {
   ev_row <- ev_vs_gas_cars[vehicle_index, ]
@@ -270,9 +270,9 @@ create_cost_map <- function(vehicle_index) {
 }
 ```
 
-## Summary Statistics Function
 
 ```{r summary_stats_function}
+# Summary Statistics Function
 # Create summary data function (mirrors original reactive summary_data)
 create_summary_data <- function() {
   map_dfr(1:nrow(ev_vs_gas_cars), function(i) {
@@ -516,5 +516,4 @@ cat("=============\n")
 cat("- Best vehicle comparison:", ev_vs_gas_cars$EV_Model[which.max(all_savings)], "vs", ev_vs_gas_cars$Gas_Model[which.max(all_savings)], "\n")
 cat("- Average savings across all comparisons: $", format(round(mean(all_savings), 0), big.mark = ","), "\n")
 cat("- Analysis based on 13,500 miles per year over 3 years\n")
-cat("- Green areas on maps indicate EV savings, red areas indicate gas is cheaper\n")
 ```
