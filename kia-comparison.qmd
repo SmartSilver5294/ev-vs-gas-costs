@@ -1,5 +1,5 @@
 ---
-title: "Analysis: Kia EV6 vs Kia Sportage"
+title: "Vehicle Analysis: Kia EV6 vs Kia Sportage"
 format: html
 execute:
     echo: false

@@ -261,8 +261,22 @@
   {
     "objectID": "cadillac-comparison.html",
     "href": "cadillac-comparison.html",
-    "title": "Analysis: Cadillac Lyriq vs Cadillac XT5",
+    "title": "Vehicle Analysis: Cadillac Lyriq vs Cadillac XT5",
     "section": "",
     "text": "Comparing: Cadillac Lyriq vs Cadillac XT5 \n\nEV Efficiency: 0.33 kWh/mile\nGas Efficiency: 21 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "nissan-comparison.html",
+    "href": "nissan-comparison.html",
+    "title": "Vehicle Analysis: Nissan Ariya vs Nissan Rogue",
+    "section": "",
+    "text": "Comparing: Nissan Ariya vs Nissan Rogue \n\nEV Efficiency: 0.31 kWh/mile\nGas Efficiency: 27 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "kia-comparison.html",
+    "href": "kia-comparison.html",
+    "title": "Vehicle Analysis: Kia EV6 vs Kia Sportage",
+    "section": "",
+    "text": "Comparing: Kia EV6 vs Kia Sportage \n\nEV Efficiency: 0.28 kWh/mile\nGas Efficiency: 25 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   }
 ]

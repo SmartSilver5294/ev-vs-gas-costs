@@ -1,5 +1,5 @@
 ---
-title: "Analysis: Nissan Ariya vs Nissan Rogue"
+title: "Vehicle Analysis: Nissan Ariya vs Nissan Rogue"
 format: html
 execute:
     echo: false
