@@ -1,5 +1,5 @@
 ---
-title: "Vehicle Analysis: Hyundai Ioniq 5 vs Hyundai Tucson"
+title: "Analysis: Hyundai Ioniq 5 vs Hyundai Tucson"
 format: html
 execute:
     echo: false

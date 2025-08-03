@@ -1,5 +1,5 @@
 ---
-title: "Analysis: Ford Mustang Mach-E vs Ford Mustang"
+title: "Analysis: Nissan Ariya vs Nissan Rogue"
 format: html
 execute:
     echo: false
@@ -296,12 +296,12 @@ create_summary_data <- function() {
 
 
 
-```{r vehicle_1}
-# Vehicle 1 Details
-display_vehicle_details(1)
+```{r vehicle_8}
+# Vehicle 8 Details
+display_vehicle_details(8)
 ```
 
-```{r vehicle_1_map}
-# Vehicle 1 Map
-create_cost_map(1)
+```{r vehicle_8_map}
+# Vehicle 8 Map
+create_cost_map(8)
 ```

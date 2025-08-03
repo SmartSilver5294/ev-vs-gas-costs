@@ -19,6 +19,18 @@ website:
             text: Hyundai Ioniq 5 vs Hyundai Tucson
           - href: F-150-comparison.qmd
             text: Ford F-150 Lightning vs Ford F-150
+          - href: honda-comparison.qmd
+            text: Honda Prologue vs Honda Passport
+          - href: chevy-comparison.qmd
+            text: Chevrolet Equinox EV vs Chevrolet Equinox
+          - href: cadillac-comparison.qmd
+            text: Cadillac Lyriq vs Cadillac XT5
+          - href: volkswagen-comparison.qmd
+            text: Volkswagen ID.4 vs Volkswagen Tiguan
+          - href: nissan-comparison.qmd
+            text: Nissan Ariya vs Nissan Rogue
+          - href: kia-comparison.qmd
+            text: Kia EV6 vs Kia Sportage
       - href: sources.qmd
         text: Sources
       - about.qmd

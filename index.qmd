@@ -224,6 +224,5 @@ leaflet(states_sf) %>%
 ```
 
 
-Have you ever wondered whether an EV or a gas car would be better for you? 
-
-Well, I’ve been exploring the different traffic congestion levels all around Massachusetts in January of 2024, using a data set from Mass.gov. Today, I have compiled the data into a combined interactive graph that lets you see the traffic congestion levels in most of the cities within MA in January of both 2020 and 2024. I also made another graph about the Jan 2024 Massachusetts census data to compare the congestion levels to the population. I have found that the highest levels of congestion are near Cape Cod, while the lowest congestion levels are closer to the middle and eastern sides of the state. Feel free to look around and enjoy!
+Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from [AAA](https://gasprices.aaa.com/ev-charging-prices/). Today, I have compiled the data into multiple interactive graphs
+that lets you visualize EV costs over a span of 3 years compared to gas costs over the same time frame. I also made multiple other graphs and tables that demonstrate the key takeaways and comparisons of specific cars. I have found that the best EV model compared to its gas counterpart is the Honda Prologue, and the best states to buy an EV in are Washington and California. Feel free to look around and enjoy the website!

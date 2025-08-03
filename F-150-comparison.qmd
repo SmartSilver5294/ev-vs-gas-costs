@@ -1,5 +1,5 @@
 ---
-title: "Vehicle Analysis: Ford F-150 Lightning vs Ford F-150"
+title: "Analysis: Ford F-150 Lightning vs Ford F-150"
 format: html
 execute:
     echo: false
