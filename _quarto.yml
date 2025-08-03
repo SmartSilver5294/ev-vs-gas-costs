@@ -9,8 +9,14 @@ website:
         text: Home
       - text: Graphs
         menu:
-          - href: test.qmd
+          - href: plot-1.qmd
             text: Average Costs Graph
+      - text: Individual Vehicle Analysis
+        menu:
+          - href: mustang-comparison.qmd
+            text: Ford Mustang Mach-E vs Ford Mustang
+      - href: sources.qmd
+        text: Sources
       - about.qmd
 
 format:
@@ -20,6 +26,3 @@ format:
       - brand
     css: styles.css
     toc: true
-
-
-

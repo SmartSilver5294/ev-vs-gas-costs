@@ -1,0 +1,6 @@
+---
+title: "Sources"
+format: html
+---
+
+The data was taken from a dataset published by [AAA](https://gasprices.aaa.com/ev-charging-prices/) and was added to/adjusted by me, Copilot AI, Chat GPT, and Claude AI. Since there was little data for multiple graphs, I decided to add a comparison of different EVs and their gas counterparts to further explore the connections and differences between prices in different states.

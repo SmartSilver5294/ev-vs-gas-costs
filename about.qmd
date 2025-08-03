@@ -2,4 +2,8 @@
 title: "About"
 ---
 
-This site was made for [Kane's Data Science Bootcamp](https://bootcamp.davidkane.info/)
+My name is Ayush Chandra and I am in 9th grade at Sharon High School. You find my work on [GitHub](https://github.com/SmartSilver5294) or contact me at [chandra.ayush2021@gmail.com](chandra.ayush2021@gmail.com).
+
+My project is about the average cost of paying for gas versus paying for charging over a 3 year period in the US. It also includes comparisons between different EVs and their gas counterparts. The code and data are available at the [Github Repo](https://github.com/SmartSilver5294/ev-vs-gas-costs).
+
+This site was created for [Kane's Data Science Bootcamp](https://bootcamp.davidkane.info/).
