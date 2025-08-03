@@ -1,5 +1,5 @@
 ---
-title: "Ford Mustang Mach-E vs Ford Mustang"
+title: "Vehicle Analysis: Ford Mustang Mach-E vs Ford Mustang"
 format: html
 execute:
     echo: false
