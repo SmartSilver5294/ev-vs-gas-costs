@@ -15,6 +15,10 @@ website:
         menu:
           - href: mustang-comparison.qmd
             text: Ford Mustang Mach-E vs Ford Mustang
+          - href: ioniq-comparison.qmd
+            text: Hyundai Ioniq 5 vs Hyundai Tucson
+          - href: F-150-comparison.qmd
+            text: Ford F-150 Lightning vs Ford F-150
       - href: sources.qmd
         text: Sources
       - about.qmd
