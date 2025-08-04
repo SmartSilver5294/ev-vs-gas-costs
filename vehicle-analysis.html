@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sources – EV Charging vs Gas Costs Over 3 Years</title>
+<title>Analysis Results – EV Charging vs Gas Costs Over 3 Years</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,6 +67,26 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+
+<script src="site_libs/datatables-binding-0.33/datatables.js"></script>
+
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+
+<script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+
+<link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
 
 
 <link rel="stylesheet" href="styles.css">
@@ -160,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./sources.html" aria-current="page"> 
+    <a class="nav-link" href="./sources.html"> 
 <span class="menu-text">Sources</span></a>
   </li>  
   <li class="nav-item">
@@ -178,15 +198,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overall-summary-statistics" id="toc-overall-summary-statistics" class="nav-link active" data-scroll-target="#overall-summary-statistics">Overall Summary Statistics</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Sources</h1>
+<h1 class="title">Analysis Results</h1>
 </div>
 
 
@@ -203,9 +229,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The data was taken from a dataset published by <a href="https://gasprices.aaa.com/ev-charging-prices/">AAA</a> and was added to/adjusted by me, Copilot AI, Chat GPT, and Claude AI. Since there was little data for multiple graphs, I decided to add a comparison of different EVs and their gas counterparts to further explore the connections and differences between prices in different states.</p>
+<hr>
+<section id="overall-summary-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="overall-summary-statistics">Overall Summary Statistics</h2>
+<p>Click on the arrows to order the table as you wish.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-7f3b5e920c9348571c16" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-7f3b5e920c9348571c16">{"x":{"filter":"none","vertical":false,"caption":"<caption>3-Year Cost Comparison Summary<\/caption>","data":[["1","2","3","4","5","6","7","8","9"],["Honda Prologue vs Honda Passport","Cadillac Lyriq vs Cadillac XT5","Kia EV6 vs Kia Sportage","Volkswagen ID.4 vs Volkswagen Tiguan","Hyundai Ioniq 5 vs Hyundai Tucson","Ford Mustang Mach-E vs Ford Mustang","Chevrolet Equinox EV vs Chevrolet Equinox","Nissan Ariya vs Nissan Rogue","Ford F-150 Lightning vs Ford F-150"],["$4,631","$5,094","$4,323","$4,631","$4,323","$4,940","$4,477","$4,786","$7,410"],["$5,803","$6,079","$5,107","$5,319","$4,910","$5,107","$4,560","$4,728","$6,383"],["$1,172","$985","$784","$688","$588","$167","$83","$-57","$-1,027"],[46,40,40,38,38,29,26,26,9],[5,11,11,13,13,22,25,25,42]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Vehicle Pair<\/th>\n      <th>Avg EV Cost<\/th>\n      <th>Avg Gas Cost<\/th>\n      <th>Avg Savings per Year<\/th>\n      <th>States w/ Savings<\/th>\n      <th>States w/ Losses<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":9,"dom":"t","columnDefs":[{"className":"dt-right","targets":[5,6]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Vehicle Pair","targets":1},{"name":"Avg EV Cost","targets":2},{"name":"Avg Gas Cost","targets":3},{"name":"Avg Savings per Year","targets":4},{"name":"States w/ Savings","targets":5},{"name":"States w/ Losses","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[9,10,25,50,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'background-color':isNaN(parseFloat(value)) ? '' : value <= 0 ? \"#ffcccc\" : \"#ccffcc\"});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+<hr>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
