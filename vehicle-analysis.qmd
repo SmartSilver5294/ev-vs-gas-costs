@@ -1,6 +1,5 @@
 ---
-title: "EV Charging vs Gas Costs Over 3 Years"
-author: "Ayush Chandra"
+title: "Analysis Results"
 execute:
     echo: false
     message: false
@@ -159,10 +158,6 @@ states_sf <- st_as_sf(map("state", plot = FALSE, fill = TRUE)) %>%
   mutate(region = tolower(ID))
 ```
 
-# EV vs Gas Cost Comparison
-
-## Vehicle Selection Overview
-
 ```{r vehicle_choices}
 # Create vehicle choices overview
 vehicle_choices <- tibble(
@@ -172,10 +167,7 @@ vehicle_choices <- tibble(
   Gas_Efficiency = paste0(ev_vs_gas_cars$Gas_Efficiency, " mpg")
 )
 
-kable(vehicle_choices, 
-      caption = "Available Vehicle Comparisons",
-      col.names = c("Index", "Vehicle Comparison (EV vs Gas)", "EV Efficiency", "Gas Efficiency")) %>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
+
 ```
 
 
@@ -303,9 +295,9 @@ create_summary_data <- function() {
 
 ---
 
-# Analysis Results
-
 ## Overall Summary Statistics
+
+Click on the arrows to order the table as you wish.
 
 ```{r overall_summary}
 # Display overall summary table
@@ -319,201 +311,3 @@ datatable(summary_data,
 ```
 
 ---
-
-# Individual Vehicle Comparisons
-
-## 1. Ford Mustang Mach-E vs Ford Mustang
-
-```{r vehicle_1}
-# Vehicle 1 Details
-display_vehicle_details(1)
-```
-
-```{r vehicle_1_map}
-# Vehicle 1 Map
-create_cost_map(1)
-```
-
----
-
-## 2. Hyundai Ioniq 5 vs Hyundai Tucson
-
-```{r vehicle_2}
-# Vehicle 2 Details
-display_vehicle_details(2)
-```
-
-```{r vehicle_2_map}
-# Vehicle 2 Map
-create_cost_map(2)
-```
-
----
-
-## 3. Ford F-150 Lightning vs Ford F-150
-
-```{r vehicle_3}
-# Vehicle 3 Details
-display_vehicle_details(3)
-```
-
-```{r vehicle_3_map}
-# Vehicle 3 Map
-create_cost_map(3)
-```
-
----
-
-## 4. Honda Prologue vs Honda Passport
-
-```{r vehicle_4}
-# Vehicle 4 Details
-display_vehicle_details(4)
-```
-
-```{r vehicle_4_map}
-# Vehicle 4 Map
-create_cost_map(4)
-```
-
----
-
-## 5. Chevrolet Equinox EV vs Chevrolet Equinox
-
-```{r vehicle_5}
-# Vehicle 5 Details
-display_vehicle_details(5)
-```
-
-```{r vehicle_5_map}
-# Vehicle 5 Map
-create_cost_map(5)
-```
-
----
-
-## 6. Cadillac Lyriq vs Cadillac XT5
-
-```{r vehicle_6}
-# Vehicle 6 Details
-display_vehicle_details(6)
-```
-
-```{r vehicle_6_map}
-# Vehicle 6 Map
-create_cost_map(6)
-```
-
----
-
-## 7. Volkswagen ID.4 vs Volkswagen Tiguan
-
-```{r vehicle_7}
-# Vehicle 7 Details
-display_vehicle_details(7)
-```
-
-```{r vehicle_7_map}
-# Vehicle 7 Map
-create_cost_map(7)
-```
-
----
-
-## 8. Nissan Ariya vs Nissan Rogue
-
-```{r vehicle_8}
-# Vehicle 8 Details
-display_vehicle_details(8)
-```
-
-```{r vehicle_8_map}
-# Vehicle 8 Map
-create_cost_map(8)
-```
-
----
-
-## 9. Kia EV6 vs Kia Sportage
-
-```{r vehicle_9}
-# Vehicle 9 Details
-display_vehicle_details(9)
-```
-
-```{r vehicle_9_map}
-# Vehicle 9 Map
-create_cost_map(9)
-```
-
----
-
-# Additional Analysis
-
-## State-by-State Breakdown for Best Vehicle Comparison
-
-```{r best_vehicle_analysis}
-# Find the best performing vehicle comparison
-best_vehicle_idx <- which.max(sapply(1:nrow(ev_vs_gas_cars), function(i) {
-  ev_row <- ev_vs_gas_cars[i, ]
-  ev_efficiency <- ev_row$EV_Efficiency
-  gas_efficiency <- ev_row$Gas_Efficiency
-  
-  costs <- combined_data %>%
-    mutate(
-      model_ev_cost = Cost_per_kWh * (annual_miles * ev_efficiency) * 3,
-      model_gas_cost = Regular * (annual_miles / gas_efficiency) * 3,
-      model_cost_diff = model_gas_cost - model_ev_cost
-    )
-  
-  mean(costs$model_cost_diff)
-}))
-
-best_vehicle <- ev_vs_gas_cars[best_vehicle_idx, ]
-cat("Best overall vehicle comparison:", best_vehicle$EV_Model, "vs", best_vehicle$Gas_Model)
-
-# Calculate detailed costs for best vehicle
-ev_efficiency <- best_vehicle$EV_Efficiency
-gas_efficiency <- best_vehicle$Gas_Efficiency
-
-detailed_costs <- combined_data %>%
-  mutate(
-    model_ev_cost = Cost_per_kWh * (annual_miles * ev_efficiency) * 3,
-    model_gas_cost = Regular * (annual_miles / gas_efficiency) * 3,
-    model_cost_diff = model_gas_cost - model_ev_cost
-  ) %>%
-  arrange(desc(model_cost_diff)) %>%
-  mutate(
-    `EV Cost (3yr)` = paste0("$", format(round(model_ev_cost, 0), big.mark = ",")),
-    `Gas Cost (3yr)` = paste0("$", format(round(model_gas_cost, 0), big.mark = ",")),
-    `Savings` = paste0("$", format(round(model_cost_diff, 0), big.mark = ","))
-  ) %>%
-  select(State, `EV Cost (3yr)`, `Gas Cost (3yr)`, `Savings`)
-
-kable(detailed_costs, 
-      caption = paste("State-by-State Cost Breakdown:", best_vehicle$EV_Model, "vs", best_vehicle$Gas_Model)) %>%
-  kable_styling(bootstrap_options = c("striped", "hover")) %>%
-  scroll_box(height = "400px")
-```
-
-## Summary Insights
-
-```{r summary_insights}
-# Calculate overall insights
-all_savings <- map_dbl(1:nrow(ev_vs_gas_cars), function(i) {
-  ev_row <- ev_vs_gas_cars[i, ]
-  costs <- combined_data %>%
-    mutate(
-      model_ev_cost = Cost_per_kWh * (annual_miles * ev_row$EV_Efficiency) * 3,
-      model_gas_cost = Regular * (annual_miles / ev_row$Gas_Efficiency) * 3,
-      model_cost_diff = model_gas_cost - model_ev_cost
-    )
-  mean(costs$model_cost_diff)
-})
-
-cat("Key Insights:\n")
-cat("=============\n")
-cat("- Best vehicle comparison:", ev_vs_gas_cars$EV_Model[which.max(all_savings)], "vs", ev_vs_gas_cars$Gas_Model[which.max(all_savings)], "\n")
-cat("- Average savings across all comparisons: $", format(round(mean(all_savings), 0), big.mark = ","), "\n")
-cat("- Analysis based on 13,500 miles per year over 3 years\n")
-```

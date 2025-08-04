@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "sources.html",
-    "href": "sources.html",
-    "title": "Sources",
+    "objectID": "volkswagen-comparison.html",
+    "href": "volkswagen-comparison.html",
+    "title": "Analysis: Volkswagen ID.4 vs Volkswagen Tiguan",
     "section": "",
-    "text": "The data was taken from a dataset published by AAA and was added to/adjusted by me, Copilot AI, Chat GPT, and Claude AI. Since there was little data for multiple graphs, I decided to add a comparison of different EVs and their gas counterparts to further explore the connections and differences between prices in different states."
+    "text": "Comparing: Volkswagen ID.4 vs Volkswagen Tiguan \n\nEV Efficiency: 0.3 kWh/mile\nGas Efficiency: 24 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   },
   {
     "objectID": "plot-1.html",
@@ -105,34 +105,6 @@
     "text": "Summary Insights\n\n\nKey Insights:\n\n\n=============\n\n\n- Best vehicle comparison: Honda Prologue vs Honda Passport \n\n\n- Average savings across all comparisons: $ 376 \n\n\n- Analysis based on 13,500 miles per year over 3 years"
   },
   {
-    "objectID": "ioniq-comparison.html",
-    "href": "ioniq-comparison.html",
-    "title": "Analysis: Hyundai Ioniq 5 vs Hyundai Tucson",
-    "section": "",
-    "text": "Comparing: Hyundai Ioniq 5 vs Hyundai Tucson \n\nEV Efficiency: 0.28 kWh/mile\nGas Efficiency: 26 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
-  },
-  {
-    "objectID": "F-150-comparison.html",
-    "href": "F-150-comparison.html",
-    "title": "Analysis: Ford F-150 Lightning vs Ford F-150",
-    "section": "",
-    "text": "Comparing: Ford F-150 Lightning vs Ford F-150 \n\nEV Efficiency: 0.48 kWh/mile\nGas Efficiency: 20 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "My name is Ayush Chandra and I am in 9th grade at Sharon High School. You find my work on GitHub or contact me at chandra.ayush2021@gmail.com.\nMy project is about the average cost of paying for gas versus paying for charging over a 3 year period in the US. It also includes comparisons between different EVs and their gas counterparts. The code and data are available at the Github Repo.\nThis site was created for Kane’s Data Science Bootcamp."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "EV Charging vs Gas Costs Over 3 Years Graphic",
-    "section": "",
-    "text": "Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from AAA. Today, I have compiled the data into multiple interactive graphs that lets you visualize EV costs over a span of 3 years compared to gas costs over the same time frame. I also made multiple other graphs and tables that demonstrate the key takeaways and comparisons of specific cars. I have found that the best EV model compared to its gas counterpart is the Honda Prologue, and the best states to buy an EV in are Washington and California. Feel free to look around and enjoy the website!"
-  },
-  {
     "objectID": "mustang-comparison.html",
     "href": "mustang-comparison.html",
     "title": "Analysis: Ford Mustang Mach-E vs Ford Mustang",
@@ -140,102 +112,11 @@
     "text": "Comparing: Ford Mustang Mach-E vs Ford Mustang \n\nEV Efficiency: 0.32 kWh/mile\nGas Efficiency: 25 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   },
   {
-    "objectID": "plot-2.html",
-    "href": "plot-2.html",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "objectID": "ioniq-comparison.html",
+    "href": "ioniq-comparison.html",
+    "title": "Analysis: Hyundai Ioniq 5 vs Hyundai Tucson",
     "section": "",
-    "text": "Available Vehicle Comparisons\n\n\nIndex\nVehicle Comparison (EV vs Gas)\nEV Efficiency\nGas Efficiency\n\n\n\n\n1\nFord Mustang Mach-E vs Ford Mustang\n0.32 kWh/mile\n25 mpg\n\n\n2\nHyundai Ioniq 5 vs Hyundai Tucson\n0.28 kWh/mile\n26 mpg\n\n\n3\nFord F-150 Lightning vs Ford F-150\n0.48 kWh/mile\n20 mpg\n\n\n4\nHonda Prologue vs Honda Passport\n0.3 kWh/mile\n22 mpg\n\n\n5\nChevrolet Equinox EV vs Chevrolet Equinox\n0.29 kWh/mile\n28 mpg\n\n\n6\nCadillac Lyriq vs Cadillac XT5\n0.33 kWh/mile\n21 mpg\n\n\n7\nVolkswagen ID.4 vs Volkswagen Tiguan\n0.3 kWh/mile\n24 mpg\n\n\n8\nNissan Ariya vs Nissan Rogue\n0.31 kWh/mile\n27 mpg\n\n\n9\nKia EV6 vs Kia Sportage\n0.28 kWh/mile\n25 mpg"
-  },
-  {
-    "objectID": "plot-2.html#vehicle-selection-overview",
-    "href": "plot-2.html#vehicle-selection-overview",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
-    "section": "",
-    "text": "Available Vehicle Comparisons\n\n\nIndex\nVehicle Comparison (EV vs Gas)\nEV Efficiency\nGas Efficiency\n\n\n\n\n1\nFord Mustang Mach-E vs Ford Mustang\n0.32 kWh/mile\n25 mpg\n\n\n2\nHyundai Ioniq 5 vs Hyundai Tucson\n0.28 kWh/mile\n26 mpg\n\n\n3\nFord F-150 Lightning vs Ford F-150\n0.48 kWh/mile\n20 mpg\n\n\n4\nHonda Prologue vs Honda Passport\n0.3 kWh/mile\n22 mpg\n\n\n5\nChevrolet Equinox EV vs Chevrolet Equinox\n0.29 kWh/mile\n28 mpg\n\n\n6\nCadillac Lyriq vs Cadillac XT5\n0.33 kWh/mile\n21 mpg\n\n\n7\nVolkswagen ID.4 vs Volkswagen Tiguan\n0.3 kWh/mile\n24 mpg\n\n\n8\nNissan Ariya vs Nissan Rogue\n0.31 kWh/mile\n27 mpg\n\n\n9\nKia EV6 vs Kia Sportage\n0.28 kWh/mile\n25 mpg"
-  },
-  {
-    "objectID": "plot-2.html#overall-summary-statistics",
-    "href": "plot-2.html#overall-summary-statistics",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
-    "section": "Overall Summary Statistics",
-    "text": "Overall Summary Statistics"
-  },
-  {
-    "objectID": "plot-2.html#ford-mustang-mach-e-vs-ford-mustang",
-    "href": "plot-2.html#ford-mustang-mach-e-vs-ford-mustang",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
-    "section": "1. Ford Mustang Mach-E vs Ford Mustang",
-    "text": "1. Ford Mustang Mach-E vs Ford Mustang\n\n\nComparing: Ford Mustang Mach-E vs Ford Mustang \n\nEV Efficiency: 0.32 kWh/mile\nGas Efficiency: 25 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
-  },
-  {
-    "objectID": "plot-2.html#hyundai-ioniq-5-vs-hyundai-tucson",
-    "href": "plot-2.html#hyundai-ioniq-5-vs-hyundai-tucson",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
-    "section": "2. Hyundai Ioniq 5 vs Hyundai Tucson",
-    "text": "2. Hyundai Ioniq 5 vs Hyundai Tucson\n\n\nComparing: Hyundai Ioniq 5 vs Hyundai Tucson \n\nEV Efficiency: 0.28 kWh/mile\nGas Efficiency: 26 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
-  },
-  {
-    "objectID": "plot-2.html#ford-f-150-lightning-vs-ford-f-150",
-    "href": "plot-2.html#ford-f-150-lightning-vs-ford-f-150",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
-    "section": "3. Ford F-150 Lightning vs Ford F-150",
-    "text": "3. Ford F-150 Lightning vs Ford F-150\n\n\nComparing: Ford F-150 Lightning vs Ford F-150 \n\nEV Efficiency: 0.48 kWh/mile\nGas Efficiency: 20 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
-  },
-  {
-    "objectID": "plot-2.html#honda-prologue-vs-honda-passport",
-    "href": "plot-2.html#honda-prologue-vs-honda-passport",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
-    "section": "4. Honda Prologue vs Honda Passport",
-    "text": "4. Honda Prologue vs Honda Passport\n\n\nComparing: Honda Prologue vs Honda Passport \n\nEV Efficiency: 0.3 kWh/mile\nGas Efficiency: 22 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
-  },
-  {
-    "objectID": "plot-2.html#chevrolet-equinox-ev-vs-chevrolet-equinox",
-    "href": "plot-2.html#chevrolet-equinox-ev-vs-chevrolet-equinox",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
-    "section": "5. Chevrolet Equinox EV vs Chevrolet Equinox",
-    "text": "5. Chevrolet Equinox EV vs Chevrolet Equinox\n\n\nComparing: Chevrolet Equinox EV vs Chevrolet Equinox \n\nEV Efficiency: 0.29 kWh/mile\nGas Efficiency: 28 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
-  },
-  {
-    "objectID": "plot-2.html#cadillac-lyriq-vs-cadillac-xt5",
-    "href": "plot-2.html#cadillac-lyriq-vs-cadillac-xt5",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
-    "section": "6. Cadillac Lyriq vs Cadillac XT5",
-    "text": "6. Cadillac Lyriq vs Cadillac XT5\n\n\nComparing: Cadillac Lyriq vs Cadillac XT5 \n\nEV Efficiency: 0.33 kWh/mile\nGas Efficiency: 21 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
-  },
-  {
-    "objectID": "plot-2.html#volkswagen-id.4-vs-volkswagen-tiguan",
-    "href": "plot-2.html#volkswagen-id.4-vs-volkswagen-tiguan",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
-    "section": "7. Volkswagen ID.4 vs Volkswagen Tiguan",
-    "text": "7. Volkswagen ID.4 vs Volkswagen Tiguan\n\n\nComparing: Volkswagen ID.4 vs Volkswagen Tiguan \n\nEV Efficiency: 0.3 kWh/mile\nGas Efficiency: 24 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
-  },
-  {
-    "objectID": "plot-2.html#nissan-ariya-vs-nissan-rogue",
-    "href": "plot-2.html#nissan-ariya-vs-nissan-rogue",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
-    "section": "8. Nissan Ariya vs Nissan Rogue",
-    "text": "8. Nissan Ariya vs Nissan Rogue\n\n\nComparing: Nissan Ariya vs Nissan Rogue \n\nEV Efficiency: 0.31 kWh/mile\nGas Efficiency: 27 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
-  },
-  {
-    "objectID": "plot-2.html#kia-ev6-vs-kia-sportage",
-    "href": "plot-2.html#kia-ev6-vs-kia-sportage",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
-    "section": "9. Kia EV6 vs Kia Sportage",
-    "text": "9. Kia EV6 vs Kia Sportage\n\n\nComparing: Kia EV6 vs Kia Sportage \n\nEV Efficiency: 0.28 kWh/mile\nGas Efficiency: 25 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
-  },
-  {
-    "objectID": "plot-2.html#state-by-state-breakdown-for-best-vehicle-comparison",
-    "href": "plot-2.html#state-by-state-breakdown-for-best-vehicle-comparison",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
-    "section": "State-by-State Breakdown for Best Vehicle Comparison",
-    "text": "State-by-State Breakdown for Best Vehicle Comparison\n\n\nBest overall vehicle comparison: Honda Prologue vs Honda Passport\n\n\n\n\nState-by-State Cost Breakdown: Honda Prologue vs Honda Passport\n\n\nState\nEV Cost (3yr)\nGas Cost (3yr)\nSavings\n\n\n\n\nWashington\n$4,228\n$8,072\n$3,844\n\n\nCalifornia\n$4,666\n$8,234\n$3,569\n\n\nUtah\n$3,487\n$6,182\n$2,695\n\n\nOregon\n$4,763\n$7,325\n$2,562\n\n\nHawaii\n$5,686\n$8,220\n$2,533\n\n\nMaryland\n$3,438\n$5,720\n$2,281\n\n\nKansas\n$3,062\n$5,248\n$2,187\n\n\nWashington D.C.\n$4,095\n$6,128\n$2,034\n\n\nNevada\n$4,921\n$6,822\n$1,902\n\n\nMissouri\n$3,378\n$5,254\n$1,876\n\n\nNebraska\n$3,633\n$5,480\n$1,848\n\n\nDelaware\n$3,900\n$5,655\n$1,755\n\n\nVermont\n$4,070\n$5,694\n$1,624\n\n\nIdaho\n$4,787\n$6,401\n$1,614\n\n\nIllinois\n$4,653\n$6,237\n$1,584\n\n\nNew York\n$4,301\n$5,830\n$1,529\n\n\nColorado\n$4,058\n$5,567\n$1,509\n\n\nPennsylvania\n$4,410\n$5,898\n$1,488\n\n\nMichigan\n$4,508\n$5,976\n$1,468\n\n\nMassachusetts\n$4,180\n$5,606\n$1,426\n\n\nSouth Dakota\n$4,143\n$5,519\n$1,376\n\n\nVirginia\n$4,167\n$5,534\n$1,366\n\n\nRhode Island\n$4,216\n$5,567\n$1,351\n\n\nIowa\n$4,143\n$5,456\n$1,313\n\n\nConnecticut\n$4,471\n$5,723\n$1,252\n\n\nNorth Carolina\n$4,082\n$5,306\n$1,223\n\n\nIndiana\n$4,617\n$5,664\n$1,047\n\n\nMaine\n$4,641\n$5,661\n$1,019\n\n\nWyoming\n$4,690\n$5,703\n$1,013\n\n\nFlorida\n$4,751\n$5,749\n$ 999\n\n\nNew Mexico\n$4,520\n$5,438\n$ 918\n\n\nMinnesota\n$4,593\n$5,502\n$ 910\n\n\nNew Jersey\n$4,714\n$5,583\n$ 869\n\n\nOhio\n$4,896\n$5,725\n$ 829\n\n\nArizona\n$5,091\n$5,839\n$ 749\n\n\nAlaska\n$6,196\n$6,926\n$ 729\n\n\nGeorgia\n$4,653\n$5,372\n$ 718\n\n\nTexas\n$4,435\n$5,103\n$ 668\n\n\nMontana\n$5,528\n$5,981\n$ 453\n\n\nMississippi\n$4,641\n$4,983\n$ 342\n\n\nNew Hampshire\n$5,273\n$5,501\n$ 228\n\n\nKentucky\n$5,164\n$5,372\n$ 208\n\n\nNorth Dakota\n$5,152\n$5,353\n$ 202\n\n\nOklahoma\n$4,945\n$5,088\n$ 143\n\n\nWisconsin\n$5,212\n$5,350\n$ 137\n\n\nArkansas\n$5,152\n$5,175\n$ 23\n\n\nLouisiana\n$5,188\n$5,099\n$ -89\n\n\nSouth Carolina\n$5,346\n$5,188\n$ -158\n\n\nAlabama\n$5,310\n$5,134\n$ -175\n\n\nTennessee\n$5,674\n$5,140\n$ -534\n\n\nWest Virginia\n$6,367\n$5,670\n$ -697"
-  },
-  {
-    "objectID": "plot-2.html#summary-insights",
-    "href": "plot-2.html#summary-insights",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
-    "section": "Summary Insights",
-    "text": "Summary Insights\n\n\nKey Insights:\n\n\n=============\n\n\n- Best vehicle comparison: Honda Prologue vs Honda Passport \n\n\n- Average savings across all comparisons: $ 376 \n\n\n- Analysis based on 13,500 miles per year over 3 years"
+    "text": "Comparing: Hyundai Ioniq 5 vs Hyundai Tucson \n\nEV Efficiency: 0.28 kWh/mile\nGas Efficiency: 26 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   },
   {
     "objectID": "honda-comparison.html",
@@ -252,11 +133,11 @@
     "text": "Comparing: Chevrolet Equinox EV vs Chevrolet Equinox \n\nEV Efficiency: 0.29 kWh/mile\nGas Efficiency: 28 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   },
   {
-    "objectID": "volkswagen-comparison.html",
-    "href": "volkswagen-comparison.html",
-    "title": "Analysis: Volkswagen ID.4 vs Volkswagen Tiguan",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Comparing: Volkswagen ID.4 vs Volkswagen Tiguan \n\nEV Efficiency: 0.3 kWh/mile\nGas Efficiency: 24 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+    "text": "My name is Ayush Chandra and I am in 9th grade at Sharon High School. You find my work on GitHub or contact me at chandra.ayush2021@gmail.com.\nMy project is about the average cost of paying for gas versus paying for charging over a 3 year period in the US. It also includes comparisons between different EVs and their gas counterparts. The code and data are available at the Github Repo.\nThis site was created for Kane’s Data Science Bootcamp."
   },
   {
     "objectID": "cadillac-comparison.html",
@@ -266,11 +147,18 @@
     "text": "Comparing: Cadillac Lyriq vs Cadillac XT5 \n\nEV Efficiency: 0.33 kWh/mile\nGas Efficiency: 21 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   },
   {
-    "objectID": "nissan-comparison.html",
-    "href": "nissan-comparison.html",
-    "title": "Vehicle Analysis: Nissan Ariya vs Nissan Rogue",
+    "objectID": "F-150-comparison.html",
+    "href": "F-150-comparison.html",
+    "title": "Analysis: Ford F-150 Lightning vs Ford F-150",
     "section": "",
-    "text": "Comparing: Nissan Ariya vs Nissan Rogue \n\nEV Efficiency: 0.31 kWh/mile\nGas Efficiency: 27 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+    "text": "Comparing: Ford F-150 Lightning vs Ford F-150 \n\nEV Efficiency: 0.48 kWh/mile\nGas Efficiency: 20 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "EV Charging vs Gas Costs Over 3 Years Graphic",
+    "section": "",
+    "text": "Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from AAA. Today, I have compiled the data into multiple interactive graphs that lets you visualize EV costs over a span of 3 years compared to gas costs over the same time frame. I also made multiple other graphs and tables that demonstrate the key takeaways and comparisons of specific cars. I have found that the best EV model compared to its gas counterpart is the Honda Prologue, and the best states to buy an EV in are Washington and California. Feel free to look around and enjoy the website!"
   },
   {
     "objectID": "kia-comparison.html",
@@ -278,5 +166,117 @@
     "title": "Vehicle Analysis: Kia EV6 vs Kia Sportage",
     "section": "",
     "text": "Comparing: Kia EV6 vs Kia Sportage \n\nEV Efficiency: 0.28 kWh/mile\nGas Efficiency: 25 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "nissan-comparison.html",
+    "href": "nissan-comparison.html",
+    "title": "Vehicle Analysis: Nissan Ariya vs Nissan Rogue",
+    "section": "",
+    "text": "Comparing: Nissan Ariya vs Nissan Rogue \n\nEV Efficiency: 0.31 kWh/mile\nGas Efficiency: 27 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "sources.html",
+    "href": "sources.html",
+    "title": "Sources",
+    "section": "",
+    "text": "The data was taken from a dataset published by AAA and was added to/adjusted by me, Copilot AI, Chat GPT, and Claude AI. Since there was little data for multiple graphs, I decided to add a comparison of different EVs and their gas counterparts to further explore the connections and differences between prices in different states."
+  },
+  {
+    "objectID": "vehicle-overview.html",
+    "href": "vehicle-overview.html",
+    "title": "Vehicle Overview",
+    "section": "",
+    "text": "Available Vehicle Comparisons\n\n\nIndex\nVehicle Comparison (EV vs Gas)\nEV Efficiency\nGas Efficiency\n\n\n\n\n1\nFord Mustang Mach-E vs Ford Mustang\n0.32 kWh/mile\n25 mpg\n\n\n2\nHyundai Ioniq 5 vs Hyundai Tucson\n0.28 kWh/mile\n26 mpg\n\n\n3\nFord F-150 Lightning vs Ford F-150\n0.48 kWh/mile\n20 mpg\n\n\n4\nHonda Prologue vs Honda Passport\n0.3 kWh/mile\n22 mpg\n\n\n5\nChevrolet Equinox EV vs Chevrolet Equinox\n0.29 kWh/mile\n28 mpg\n\n\n6\nCadillac Lyriq vs Cadillac XT5\n0.33 kWh/mile\n21 mpg\n\n\n7\nVolkswagen ID.4 vs Volkswagen Tiguan\n0.3 kWh/mile\n24 mpg\n\n\n8\nNissan Ariya vs Nissan Rogue\n0.31 kWh/mile\n27 mpg\n\n\n9\nKia EV6 vs Kia Sportage\n0.28 kWh/mile\n25 mpg"
+  },
+  {
+    "objectID": "vehicle-overview.html#vehicle-selection-overview",
+    "href": "vehicle-overview.html#vehicle-selection-overview",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "",
+    "text": "Available Vehicle Comparisons\n\n\nIndex\nVehicle Comparison (EV vs Gas)\nEV Efficiency\nGas Efficiency\n\n\n\n\n1\nFord Mustang Mach-E vs Ford Mustang\n0.32 kWh/mile\n25 mpg\n\n\n2\nHyundai Ioniq 5 vs Hyundai Tucson\n0.28 kWh/mile\n26 mpg\n\n\n3\nFord F-150 Lightning vs Ford F-150\n0.48 kWh/mile\n20 mpg\n\n\n4\nHonda Prologue vs Honda Passport\n0.3 kWh/mile\n22 mpg\n\n\n5\nChevrolet Equinox EV vs Chevrolet Equinox\n0.29 kWh/mile\n28 mpg\n\n\n6\nCadillac Lyriq vs Cadillac XT5\n0.33 kWh/mile\n21 mpg\n\n\n7\nVolkswagen ID.4 vs Volkswagen Tiguan\n0.3 kWh/mile\n24 mpg\n\n\n8\nNissan Ariya vs Nissan Rogue\n0.31 kWh/mile\n27 mpg\n\n\n9\nKia EV6 vs Kia Sportage\n0.28 kWh/mile\n25 mpg"
+  },
+  {
+    "objectID": "vehicle-overview.html#overall-summary-statistics",
+    "href": "vehicle-overview.html#overall-summary-statistics",
+    "title": "Vehicle Overview",
+    "section": "Overall Summary Statistics",
+    "text": "Overall Summary Statistics"
+  },
+  {
+    "objectID": "vehicle-analysis.html#overall-summary-statistics",
+    "href": "vehicle-analysis.html#overall-summary-statistics",
+    "title": "Analysis Results",
+    "section": "Overall Summary Statistics",
+    "text": "Overall Summary Statistics\nClick on the arrows to order the table as you wish."
+  },
+  {
+    "objectID": "vehicle-overview.html#state-by-state-breakdown-for-best-vehicle-comparison",
+    "href": "vehicle-overview.html#state-by-state-breakdown-for-best-vehicle-comparison",
+    "title": "Vehicle Overview",
+    "section": "State-by-State Breakdown for Best Vehicle Comparison",
+    "text": "State-by-State Breakdown for Best Vehicle Comparison\n\n\nBest overall vehicle comparison: Honda Prologue vs Honda Passport\n\n\n\n\nState-by-State Cost Breakdown: Honda Prologue vs Honda Passport\n\n\nState\nEV Cost (3yr)\nGas Cost (3yr)\nSavings\n\n\n\n\nWashington\n$4,228\n$8,072\n$3,844\n\n\nCalifornia\n$4,666\n$8,234\n$3,569\n\n\nUtah\n$3,487\n$6,182\n$2,695\n\n\nOregon\n$4,763\n$7,325\n$2,562\n\n\nHawaii\n$5,686\n$8,220\n$2,533\n\n\nMaryland\n$3,438\n$5,720\n$2,281\n\n\nKansas\n$3,062\n$5,248\n$2,187\n\n\nWashington D.C.\n$4,095\n$6,128\n$2,034\n\n\nNevada\n$4,921\n$6,822\n$1,902\n\n\nMissouri\n$3,378\n$5,254\n$1,876\n\n\nNebraska\n$3,633\n$5,480\n$1,848\n\n\nDelaware\n$3,900\n$5,655\n$1,755\n\n\nVermont\n$4,070\n$5,694\n$1,624\n\n\nIdaho\n$4,787\n$6,401\n$1,614\n\n\nIllinois\n$4,653\n$6,237\n$1,584\n\n\nNew York\n$4,301\n$5,830\n$1,529\n\n\nColorado\n$4,058\n$5,567\n$1,509\n\n\nPennsylvania\n$4,410\n$5,898\n$1,488\n\n\nMichigan\n$4,508\n$5,976\n$1,468\n\n\nMassachusetts\n$4,180\n$5,606\n$1,426\n\n\nSouth Dakota\n$4,143\n$5,519\n$1,376\n\n\nVirginia\n$4,167\n$5,534\n$1,366\n\n\nRhode Island\n$4,216\n$5,567\n$1,351\n\n\nIowa\n$4,143\n$5,456\n$1,313\n\n\nConnecticut\n$4,471\n$5,723\n$1,252\n\n\nNorth Carolina\n$4,082\n$5,306\n$1,223\n\n\nIndiana\n$4,617\n$5,664\n$1,047\n\n\nMaine\n$4,641\n$5,661\n$1,019\n\n\nWyoming\n$4,690\n$5,703\n$1,013\n\n\nFlorida\n$4,751\n$5,749\n$ 999\n\n\nNew Mexico\n$4,520\n$5,438\n$ 918\n\n\nMinnesota\n$4,593\n$5,502\n$ 910\n\n\nNew Jersey\n$4,714\n$5,583\n$ 869\n\n\nOhio\n$4,896\n$5,725\n$ 829\n\n\nArizona\n$5,091\n$5,839\n$ 749\n\n\nAlaska\n$6,196\n$6,926\n$ 729\n\n\nGeorgia\n$4,653\n$5,372\n$ 718\n\n\nTexas\n$4,435\n$5,103\n$ 668\n\n\nMontana\n$5,528\n$5,981\n$ 453\n\n\nMississippi\n$4,641\n$4,983\n$ 342\n\n\nNew Hampshire\n$5,273\n$5,501\n$ 228\n\n\nKentucky\n$5,164\n$5,372\n$ 208\n\n\nNorth Dakota\n$5,152\n$5,353\n$ 202\n\n\nOklahoma\n$4,945\n$5,088\n$ 143\n\n\nWisconsin\n$5,212\n$5,350\n$ 137\n\n\nArkansas\n$5,152\n$5,175\n$ 23\n\n\nLouisiana\n$5,188\n$5,099\n$ -89\n\n\nSouth Carolina\n$5,346\n$5,188\n$ -158\n\n\nAlabama\n$5,310\n$5,134\n$ -175\n\n\nTennessee\n$5,674\n$5,140\n$ -534\n\n\nWest Virginia\n$6,367\n$5,670\n$ -697"
+  },
+  {
+    "objectID": "vehicle-overview.html#summary-insights",
+    "href": "vehicle-overview.html#summary-insights",
+    "title": "Vehicle Overview",
+    "section": "Summary Insights",
+    "text": "Summary Insights\n\n\nKey Insights:\n\n\n=============\n\n\n- Best vehicle comparison: Honda Prologue vs Honda Passport \n\n\n- Average savings across all comparisons: $ 376 \n\n\n- Analysis based on 13,500 miles per year over 3 years"
+  },
+  {
+    "objectID": "additional-analysis.html",
+    "href": "additional-analysis.html",
+    "title": "Additional Analysis",
+    "section": "",
+    "text": "Best overall vehicle comparison: Honda Prologue vs Honda Passport\n\n\n\n\nState-by-State Cost Breakdown: Honda Prologue vs Honda Passport\n\n\nState\nEV Cost (3yr)\nGas Cost (3yr)\nSavings\n\n\n\n\nWashington\n$4,228\n$8,072\n$3,844\n\n\nCalifornia\n$4,666\n$8,234\n$3,569\n\n\nUtah\n$3,487\n$6,182\n$2,695\n\n\nOregon\n$4,763\n$7,325\n$2,562\n\n\nHawaii\n$5,686\n$8,220\n$2,533\n\n\nMaryland\n$3,438\n$5,720\n$2,281\n\n\nKansas\n$3,062\n$5,248\n$2,187\n\n\nWashington D.C.\n$4,095\n$6,128\n$2,034\n\n\nNevada\n$4,921\n$6,822\n$1,902\n\n\nMissouri\n$3,378\n$5,254\n$1,876\n\n\nNebraska\n$3,633\n$5,480\n$1,848\n\n\nDelaware\n$3,900\n$5,655\n$1,755\n\n\nVermont\n$4,070\n$5,694\n$1,624\n\n\nIdaho\n$4,787\n$6,401\n$1,614\n\n\nIllinois\n$4,653\n$6,237\n$1,584\n\n\nNew York\n$4,301\n$5,830\n$1,529\n\n\nColorado\n$4,058\n$5,567\n$1,509\n\n\nPennsylvania\n$4,410\n$5,898\n$1,488\n\n\nMichigan\n$4,508\n$5,976\n$1,468\n\n\nMassachusetts\n$4,180\n$5,606\n$1,426\n\n\nSouth Dakota\n$4,143\n$5,519\n$1,376\n\n\nVirginia\n$4,167\n$5,534\n$1,366\n\n\nRhode Island\n$4,216\n$5,567\n$1,351\n\n\nIowa\n$4,143\n$5,456\n$1,313\n\n\nConnecticut\n$4,471\n$5,723\n$1,252\n\n\nNorth Carolina\n$4,082\n$5,306\n$1,223\n\n\nIndiana\n$4,617\n$5,664\n$1,047\n\n\nMaine\n$4,641\n$5,661\n$1,019\n\n\nWyoming\n$4,690\n$5,703\n$1,013\n\n\nFlorida\n$4,751\n$5,749\n$ 999\n\n\nNew Mexico\n$4,520\n$5,438\n$ 918\n\n\nMinnesota\n$4,593\n$5,502\n$ 910\n\n\nNew Jersey\n$4,714\n$5,583\n$ 869\n\n\nOhio\n$4,896\n$5,725\n$ 829\n\n\nArizona\n$5,091\n$5,839\n$ 749\n\n\nAlaska\n$6,196\n$6,926\n$ 729\n\n\nGeorgia\n$4,653\n$5,372\n$ 718\n\n\nTexas\n$4,435\n$5,103\n$ 668\n\n\nMontana\n$5,528\n$5,981\n$ 453\n\n\nMississippi\n$4,641\n$4,983\n$ 342\n\n\nNew Hampshire\n$5,273\n$5,501\n$ 228\n\n\nKentucky\n$5,164\n$5,372\n$ 208\n\n\nNorth Dakota\n$5,152\n$5,353\n$ 202\n\n\nOklahoma\n$4,945\n$5,088\n$ 143\n\n\nWisconsin\n$5,212\n$5,350\n$ 137\n\n\nArkansas\n$5,152\n$5,175\n$ 23\n\n\nLouisiana\n$5,188\n$5,099\n$ -89\n\n\nSouth Carolina\n$5,346\n$5,188\n$ -158\n\n\nAlabama\n$5,310\n$5,134\n$ -175\n\n\nTennessee\n$5,674\n$5,140\n$ -534\n\n\nWest Virginia\n$6,367\n$5,670\n$ -697"
+  },
+  {
+    "objectID": "additional-analysis.html#vehicle-selection-overview",
+    "href": "additional-analysis.html#vehicle-selection-overview",
+    "title": "Additional Analysis",
+    "section": "",
+    "text": "Available Vehicle Comparisons\n\n\nIndex\nVehicle Comparison (EV vs Gas)\nEV Efficiency\nGas Efficiency\n\n\n\n\n1\nFord Mustang Mach-E vs Ford Mustang\n0.32 kWh/mile\n25 mpg\n\n\n2\nHyundai Ioniq 5 vs Hyundai Tucson\n0.28 kWh/mile\n26 mpg\n\n\n3\nFord F-150 Lightning vs Ford F-150\n0.48 kWh/mile\n20 mpg\n\n\n4\nHonda Prologue vs Honda Passport\n0.3 kWh/mile\n22 mpg\n\n\n5\nChevrolet Equinox EV vs Chevrolet Equinox\n0.29 kWh/mile\n28 mpg\n\n\n6\nCadillac Lyriq vs Cadillac XT5\n0.33 kWh/mile\n21 mpg\n\n\n7\nVolkswagen ID.4 vs Volkswagen Tiguan\n0.3 kWh/mile\n24 mpg\n\n\n8\nNissan Ariya vs Nissan Rogue\n0.31 kWh/mile\n27 mpg\n\n\n9\nKia EV6 vs Kia Sportage\n0.28 kWh/mile\n25 mpg"
+  },
+  {
+    "objectID": "additional-analysis.html#overall-summary-statistics",
+    "href": "additional-analysis.html#overall-summary-statistics",
+    "title": "Additional Analysis",
+    "section": "Overall Summary Statistics",
+    "text": "Overall Summary Statistics"
+  },
+  {
+    "objectID": "additional-analysis.html#state-by-state-breakdown-for-best-vehicle-comparison",
+    "href": "additional-analysis.html#state-by-state-breakdown-for-best-vehicle-comparison",
+    "title": "Breakdown and Summary",
+    "section": "State-by-State Breakdown for Best Vehicle Comparison",
+    "text": "State-by-State Breakdown for Best Vehicle Comparison\n\n\nBest overall vehicle comparison: Honda Prologue vs Honda Passport\n\n\n\n\nState-by-State Cost Breakdown: Honda Prologue vs Honda Passport\n\n\nState\nEV Cost (3yr)\nGas Cost (3yr)\nSavings\n\n\n\n\nWashington\n$4,228\n$8,072\n$3,844\n\n\nCalifornia\n$4,666\n$8,234\n$3,569\n\n\nUtah\n$3,487\n$6,182\n$2,695\n\n\nOregon\n$4,763\n$7,325\n$2,562\n\n\nHawaii\n$5,686\n$8,220\n$2,533\n\n\nMaryland\n$3,438\n$5,720\n$2,281\n\n\nKansas\n$3,062\n$5,248\n$2,187\n\n\nWashington D.C.\n$4,095\n$6,128\n$2,034\n\n\nNevada\n$4,921\n$6,822\n$1,902\n\n\nMissouri\n$3,378\n$5,254\n$1,876\n\n\nNebraska\n$3,633\n$5,480\n$1,848\n\n\nDelaware\n$3,900\n$5,655\n$1,755\n\n\nVermont\n$4,070\n$5,694\n$1,624\n\n\nIdaho\n$4,787\n$6,401\n$1,614\n\n\nIllinois\n$4,653\n$6,237\n$1,584\n\n\nNew York\n$4,301\n$5,830\n$1,529\n\n\nColorado\n$4,058\n$5,567\n$1,509\n\n\nPennsylvania\n$4,410\n$5,898\n$1,488\n\n\nMichigan\n$4,508\n$5,976\n$1,468\n\n\nMassachusetts\n$4,180\n$5,606\n$1,426\n\n\nSouth Dakota\n$4,143\n$5,519\n$1,376\n\n\nVirginia\n$4,167\n$5,534\n$1,366\n\n\nRhode Island\n$4,216\n$5,567\n$1,351\n\n\nIowa\n$4,143\n$5,456\n$1,313\n\n\nConnecticut\n$4,471\n$5,723\n$1,252\n\n\nNorth Carolina\n$4,082\n$5,306\n$1,223\n\n\nIndiana\n$4,617\n$5,664\n$1,047\n\n\nMaine\n$4,641\n$5,661\n$1,019\n\n\nWyoming\n$4,690\n$5,703\n$1,013\n\n\nFlorida\n$4,751\n$5,749\n$ 999\n\n\nNew Mexico\n$4,520\n$5,438\n$ 918\n\n\nMinnesota\n$4,593\n$5,502\n$ 910\n\n\nNew Jersey\n$4,714\n$5,583\n$ 869\n\n\nOhio\n$4,896\n$5,725\n$ 829\n\n\nArizona\n$5,091\n$5,839\n$ 749\n\n\nAlaska\n$6,196\n$6,926\n$ 729\n\n\nGeorgia\n$4,653\n$5,372\n$ 718\n\n\nTexas\n$4,435\n$5,103\n$ 668\n\n\nMontana\n$5,528\n$5,981\n$ 453\n\n\nMississippi\n$4,641\n$4,983\n$ 342\n\n\nNew Hampshire\n$5,273\n$5,501\n$ 228\n\n\nKentucky\n$5,164\n$5,372\n$ 208\n\n\nNorth Dakota\n$5,152\n$5,353\n$ 202\n\n\nOklahoma\n$4,945\n$5,088\n$ 143\n\n\nWisconsin\n$5,212\n$5,350\n$ 137\n\n\nArkansas\n$5,152\n$5,175\n$ 23\n\n\nLouisiana\n$5,188\n$5,099\n$ -89\n\n\nSouth Carolina\n$5,346\n$5,188\n$ -158\n\n\nAlabama\n$5,310\n$5,134\n$ -175\n\n\nTennessee\n$5,674\n$5,140\n$ -534\n\n\nWest Virginia\n$6,367\n$5,670\n$ -697"
+  },
+  {
+    "objectID": "additional-analysis.html#summary-insights",
+    "href": "additional-analysis.html#summary-insights",
+    "title": "Breakdown and Summary",
+    "section": "Summary Insights",
+    "text": "Summary Insights\n\n\nKey Insights:\n\n\n=============\n\n\n- Best vehicle comparison: Honda Prologue vs Honda Passport \n\n\n- Average savings across all comparisons: $ 376 \n\n\n- Analysis based on 13,500 miles per year over 3 years"
+  },
+  {
+    "objectID": "vehicle-overview.html#ev-vs-gas-cost-comparison",
+    "href": "vehicle-overview.html#ev-vs-gas-cost-comparison",
+    "title": "Vehicle Overview",
+    "section": "EV vs Gas Cost Comparison",
+    "text": "EV vs Gas Cost Comparison\n\n\n\nAvailable Vehicle Comparisons\n\n\nIndex\nVehicle Comparison (EV vs Gas)\nEV Efficiency\nGas Efficiency\n\n\n\n\n1\nFord Mustang Mach-E vs Ford Mustang\n0.32 kWh/mile\n25 mpg\n\n\n2\nHyundai Ioniq 5 vs Hyundai Tucson\n0.28 kWh/mile\n26 mpg\n\n\n3\nFord F-150 Lightning vs Ford F-150\n0.48 kWh/mile\n20 mpg\n\n\n4\nHonda Prologue vs Honda Passport\n0.3 kWh/mile\n22 mpg\n\n\n5\nChevrolet Equinox EV vs Chevrolet Equinox\n0.29 kWh/mile\n28 mpg\n\n\n6\nCadillac Lyriq vs Cadillac XT5\n0.33 kWh/mile\n21 mpg\n\n\n7\nVolkswagen ID.4 vs Volkswagen Tiguan\n0.3 kWh/mile\n24 mpg\n\n\n8\nNissan Ariya vs Nissan Rogue\n0.31 kWh/mile\n27 mpg\n\n\n9\nKia EV6 vs Kia Sportage\n0.28 kWh/mile\n25 mpg"
+  },
+  {
+    "objectID": "ultimate-analysis.html#comprehensive-ev-vs-gas-vehicle-comparison",
+    "href": "ultimate-analysis.html#comprehensive-ev-vs-gas-vehicle-comparison",
+    "title": "Vehicle Overview",
+    "section": "Comprehensive EV vs Gas Vehicle Comparison",
+    "text": "Comprehensive EV vs Gas Vehicle Comparison\n\n\n\n\nComprehensive Vehicle Comparison: Electric vs Gasoline Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVehicle Models\n\n\nEfficiency Metrics\n\n\nRange Comparison\n\n\nMSRP Pricing\n\n\nCost Analysis\n\n\n\nIndex\nVehicle Class\nElectric Model\nGasoline Model\nEV Energy Use\nGas Fuel Economy\nEV Range\nGas Range\nEV MSRP\nGas MSRP\nPrice Gap\n\n\n\n\n1\nCompact SUV\nAudi Q4 e-tron\nAudi Q5\n0.32 kWh/mi\n26 mpg\n265 mi\n420 mi\n$ 43,900\n$43,300\n$ 600\n\n\n2\nCompact SUV\nChevrolet Equinox EV\nChevrolet Equinox\n0.29 kWh/mi\n28 mpg\n319 mi\n460 mi\n$ 34,995\n$25,100\n$ 9,895\n\n\n3\nCompact SUV\nHyundai Ioniq 5\nHyundai Tucson\n0.28 kWh/mi\n26 mpg\n303 mi\n420 mi\n$ 38,615\n$25,350\n$ 13,265\n\n\n4\nCompact SUV\nKia EV6\nKia Sportage\n0.28 kWh/mi\n25 mpg\n310 mi\n400 mi\n$ 40,900\n$25,200\n$ 15,700\n\n\n5\nCompact SUV\nMercedes EQB\nMercedes GLB\n0.34 kWh/mi\n24 mpg\n260 mi\n380 mi\n$ 54,500\n$37,850\n$ 16,650\n\n\n6\nCompact SUV\nNissan Ariya\nNissan Rogue\n0.31 kWh/mi\n27 mpg\n304 mi\n450 mi\n$ 43,190\n$25,650\n$ 17,540\n\n\n7\nCompact SUV\nTesla Model Y\nBMW X3\n0.28 kWh/mi\n26 mpg\n330 mi\n350 mi\n$ 47,740\n$43,700\n$ 4,040\n\n\n8\nCompact SUV\nVolkswagen ID.4\nVolkswagen Tiguan\n0.3 kWh/mi\n24 mpg\n275 mi\n380 mi\n$ 38,790\n$26,440\n$ 12,350\n\n\n9\nCompact SUV\nVolvo XC40 Recharge\nVolvo XC40\n0.33 kWh/mi\n25 mpg\n223 mi\n350 mi\n$ 49,800\n$35,195\n$ 14,605\n\n\n10\nFull-Size Truck\nFord F-150 Lightning\nFord F-150\n0.48 kWh/mi\n20 mpg\n320 mi\n450 mi\n$ 49,995\n$33,695\n$ 16,300\n\n\n11\nFull-Size Truck\nGMC Hummer EV\nGMC Sierra\n0.58 kWh/mi\n16 mpg\n381 mi\n350 mi\n$ 86,645\n$35,700\n$ 50,945\n\n\n12\nLarge SUV\nBMW iX\nBMW X7\n0.38 kWh/mi\n18 mpg\n324 mi\n380 mi\n$ 83,200\n$74,900\n$ 8,300\n\n\n13\nLuxury SUV\nCadillac Lyriq\nCadillac XT5\n0.33 kWh/mi\n21 mpg\n312 mi\n420 mi\n$ 62,990\n$44,090\n$ 18,900\n\n\n14\nLuxury SUV\nGenesis GV70 Electrified\nGenesis GV70\n0.35 kWh/mi\n22 mpg\n294 mi\n380 mi\n$ 59,300\n$42,050\n$ 17,250\n\n\n15\nLuxury Sedan\nLucid Air Dream\nMercedes S-Class\n0.29 kWh/mi\n24 mpg\n516 mi\n420 mi\n$ 87,400\n$94,250\n$ -6,850\n\n\n16\nLuxury Sedan\nMercedes EQS\nMercedes S-Class\n0.33 kWh/mi\n24 mpg\n453 mi\n420 mi\n$104,400\n$94,250\n$ 10,150\n\n\n17\nLuxury Sedan\nTesla Model S\nBMW 7 Series\n0.25 kWh/mi\n22 mpg\n405 mi\n450 mi\n$ 74,990\n$91,350\n$-16,360\n\n\n18\nMid-Size SUV\nHonda Prologue\nHonda Passport\n0.3 kWh/mi\n22 mpg\n296 mi\n400 mi\n$ 47,400\n$36,700\n$ 10,700\n\n\n19\nMid-Size SUV\nJaguar I-PACE\nJaguar F-PACE\n0.4 kWh/mi\n23 mpg\n292 mi\n400 mi\n$ 69,500\n$52,300\n$ 17,200\n\n\n20\nMid-Size Truck\nRivian R1T\nFord Ranger\n0.52 kWh/mi\n21 mpg\n314 mi\n380 mi\n$ 73,000\n$24,820\n$ 48,180\n\n\n21\nSedan\nBMW i4\nBMW 4 Series\n0.27 kWh/mi\n28 mpg\n270 mi\n400 mi\n$ 55,400\n$36,350\n$ 19,050\n\n\n22\nSedan\nPolestar 2\nVolvo S60\n0.29 kWh/mi\n27 mpg\n270 mi\n420 mi\n$ 48,400\n$38,900\n$ 9,500\n\n\n23\nSedan\nTesla Model 3\nBMW 3 Series\n0.24 kWh/mi\n30 mpg\n358 mi\n320 mi\n$ 38,990\n$33,900\n$ 5,090\n\n\n24\nSports Car\nFord Mustang Mach-E\nFord Mustang\n0.32 kWh/mi\n25 mpg\n314 mi\n380 mi\n$ 42,995\n$31,895\n$ 11,100\n\n\n25\nSports Sedan\nAudi e-tron GT\nAudi A7\n0.31 kWh/mi\n23 mpg\n238 mi\n340 mi\n$102,400\n$59,900\n$ 42,500\n\n\n26\nSports Sedan\nPorsche Taycan\nPorsche Panamera\n0.36 kWh/mi\n20 mpg\n227 mi\n380 mi\n$ 79,900\n$86,700\n$ -6,800"
+  },
+  {
+    "objectID": "ultimate-analysis.html#data-summary",
+    "href": "ultimate-analysis.html#data-summary",
+    "title": "Vehicle Overview",
+    "section": "Data Summary",
+    "text": "Data Summary\n\n\n\nDataset Summary Statistics\n\n\nSummary Metric\nValue\n\n\n\n\nTotal Comparisons\n26\n\n\nAverage EV MSRP\n$59,974\n\n\nAverage Gas MSRP\n$46,136\n\n\nAverage Price Premium (EV)\n$13,838\n\n\nMost Efficient EV\nTesla Model 3 (0.24 kWh/mi)\n\n\nMost Efficient Gas Vehicle\nBMW 3 Series (30 mpg)\n\n\nLongest Range EV\nLucid Air Dream (516 mi)\n\n\nLongest Range Gas Vehicle\nChevrolet Equinox (460 mi)\n\n\nVehicle Classes Covered\n10"
   }
 ]

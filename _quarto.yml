@@ -7,11 +7,17 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - text: Graphs
+      - text: Tables
         menu:
-          - href: plot-1.qmd
-            text: Average Costs Graph
-      - text: Individual Vehicle Analysis
+          - href: vehicle-overview.qmd
+            text: Vehicle Overview Table
+          - href: vehicle-analysis.qmd
+            text: Vehicle Analysis Table
+          - href: additional-analysis.qmd
+            text: Breakdown and Summary 
+          - href: ultimate-analysis.qmd
+            text: Extra Analysis
+      - text: Individual Vehicle Analysis Graphs
         menu:
           - href: mustang-comparison.qmd
             text: Ford Mustang Mach-E vs Ford Mustang
