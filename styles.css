@@ -73,12 +73,14 @@ main, section {
 
 .dropdown-menu a:hover {
   background-color:rgba(255, 255, 255, 0.08);
-  font-style: italic;
+  text-decoration: underline;
 }
 
 .navbar a:hover {
   color: #ffb400  !important;
+    text-decoration: underline;
 }
+
 
 h1, h2 {
   color:rgb(0, 0, 0);
