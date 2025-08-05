@@ -1,6 +1,7 @@
 ---
-title: "EV Charging vs Gas Costs Over 3 Years Graphic"
-auhtor: "Ayush Chandra"
+title: "EV Charging vs Gas Costs Over 3 Years"
+subtitle: "Red means that EVs are cheaper and Green means that Gas Vehicles are cheaper"
+author: "Ayush Chandra"
 execute:
     echo: false
     message: false
@@ -224,5 +225,5 @@ leaflet(states_sf) %>%
 ```
 
 
-Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from [AAA](https://gasprices.aaa.com/ev-charging-prices/). Today, I have compiled the data into multiple interactive graphs
-that lets you visualize EV costs over a span of 3 years compared to gas costs over the same time frame. I also made multiple other graphs and tables that demonstrate the key takeaways and comparisons of specific cars. I have found that the best EV model compared to its gas counterpart is the Honda Prologue, and the best states to buy an EV in are Washington and California. Feel free to look around and enjoy the website!
+Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from [AAA](https://gasprices.aaa.com/ev-charging-prices/). The data is compiled into multiple interactive graphs
+that lets you visualize EV costs over a span of 3 years compared to gas costs over the same time frame. I have found that the best states to buy an EV in are Washington and California.

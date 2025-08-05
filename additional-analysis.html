@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Breakdown and Summary – EV Charging vs Gas Costs Over 3 Years</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">EV Charging vs Gas Costs Over 3 Years</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tables" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Tables</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tables">    
+        <li>
+    <a class="dropdown-item" href="./vehicle-overview.html">
+ <span class="dropdown-text">Vehicle Overview Table</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./vehicle-analysis.html">
+ <span class="dropdown-text">Vehicle Analysis Table</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./additional-analysis.html">
+ <span class="dropdown-text">Breakdown and Summary</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ultimate-analysis.html">
+ <span class="dropdown-text">Extra Analysis</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-individual-vehicle-analysis-graphs" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Individual Vehicle Analysis Graphs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-individual-vehicle-analysis-graphs">    
+        <li>
+    <a class="dropdown-item" href="./mustang-comparison.html">
+ <span class="dropdown-text">Ford Mustang Mach-E vs Ford Mustang</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ioniq-comparison.html">
+ <span class="dropdown-text">Hyundai Ioniq 5 vs Hyundai Tucson</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./F-150-comparison.html">
+ <span class="dropdown-text">Ford F-150 Lightning vs Ford F-150</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./honda-comparison.html">
+ <span class="dropdown-text">Honda Prologue vs Honda Passport</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./chevy-comparison.html">
+ <span class="dropdown-text">Chevrolet Equinox EV vs Chevrolet Equinox</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cadillac-comparison.html">
+ <span class="dropdown-text">Cadillac Lyriq vs Cadillac XT5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./volkswagen-comparison.html">
+ <span class="dropdown-text">Volkswagen ID.4 vs Volkswagen Tiguan</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./nissan-comparison.html">
+ <span class="dropdown-text">Nissan Ariya vs Nissan Rogue</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./kia-comparison.html">
+ <span class="dropdown-text">Kia EV6 vs Kia Sportage</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./model.html"> 
+<span class="menu-text">Model</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./sources.html"> 
+<span class="menu-text">Sources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#state-by-state-breakdown-for-best-vehicle-comparison" id="toc-state-by-state-breakdown-for-best-vehicle-comparison" class="nav-link active" data-scroll-target="#state-by-state-breakdown-for-best-vehicle-comparison">State-by-State Breakdown for Best Vehicle Comparison</a></li>
+  <li><a href="#summary-insights" id="toc-summary-insights" class="nav-link" data-scroll-target="#summary-insights">Summary Insights</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Breakdown and Summary</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<hr>
+<section id="state-by-state-breakdown-for-best-vehicle-comparison" class="level2">
+<h2 class="anchored" data-anchor-id="state-by-state-breakdown-for-best-vehicle-comparison">State-by-State Breakdown for Best Vehicle Comparison</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Best overall vehicle comparison: Honda Prologue vs Honda Passport</code></pre>
+</div>
+<div class="cell-output-display">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; ">
+<table class="table table-striped table-hover caption-top table-sm small" data-quarto-postprocess="true">
+<caption>State-by-State Cost Breakdown: Honda Prologue vs Honda Passport</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">State</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">EV Cost (3yr)</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Gas Cost (3yr)</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Savings</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Washington</td>
+<td style="text-align: left;">$4,228</td>
+<td style="text-align: left;">$8,072</td>
+<td style="text-align: left;">$3,844</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">California</td>
+<td style="text-align: left;">$4,666</td>
+<td style="text-align: left;">$8,234</td>
+<td style="text-align: left;">$3,569</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Utah</td>
+<td style="text-align: left;">$3,487</td>
+<td style="text-align: left;">$6,182</td>
+<td style="text-align: left;">$2,695</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Oregon</td>
+<td style="text-align: left;">$4,763</td>
+<td style="text-align: left;">$7,325</td>
+<td style="text-align: left;">$2,562</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Hawaii</td>
+<td style="text-align: left;">$5,686</td>
+<td style="text-align: left;">$8,220</td>
+<td style="text-align: left;">$2,533</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Maryland</td>
+<td style="text-align: left;">$3,438</td>
+<td style="text-align: left;">$5,720</td>
+<td style="text-align: left;">$2,281</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Kansas</td>
+<td style="text-align: left;">$3,062</td>
+<td style="text-align: left;">$5,248</td>
+<td style="text-align: left;">$2,187</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Washington D.C.</td>
+<td style="text-align: left;">$4,095</td>
+<td style="text-align: left;">$6,128</td>
+<td style="text-align: left;">$2,034</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Nevada</td>
+<td style="text-align: left;">$4,921</td>
+<td style="text-align: left;">$6,822</td>
+<td style="text-align: left;">$1,902</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Missouri</td>
+<td style="text-align: left;">$3,378</td>
+<td style="text-align: left;">$5,254</td>
+<td style="text-align: left;">$1,876</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Nebraska</td>
+<td style="text-align: left;">$3,633</td>
+<td style="text-align: left;">$5,480</td>
+<td style="text-align: left;">$1,848</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Delaware</td>
+<td style="text-align: left;">$3,900</td>
+<td style="text-align: left;">$5,655</td>
+<td style="text-align: left;">$1,755</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Vermont</td>
+<td style="text-align: left;">$4,070</td>
+<td style="text-align: left;">$5,694</td>
+<td style="text-align: left;">$1,624</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Idaho</td>
+<td style="text-align: left;">$4,787</td>
+<td style="text-align: left;">$6,401</td>
+<td style="text-align: left;">$1,614</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Illinois</td>
+<td style="text-align: left;">$4,653</td>
+<td style="text-align: left;">$6,237</td>
+<td style="text-align: left;">$1,584</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">New York</td>
+<td style="text-align: left;">$4,301</td>
+<td style="text-align: left;">$5,830</td>
+<td style="text-align: left;">$1,529</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Colorado</td>
+<td style="text-align: left;">$4,058</td>
+<td style="text-align: left;">$5,567</td>
+<td style="text-align: left;">$1,509</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Pennsylvania</td>
+<td style="text-align: left;">$4,410</td>
+<td style="text-align: left;">$5,898</td>
+<td style="text-align: left;">$1,488</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Michigan</td>
+<td style="text-align: left;">$4,508</td>
+<td style="text-align: left;">$5,976</td>
+<td style="text-align: left;">$1,468</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Massachusetts</td>
+<td style="text-align: left;">$4,180</td>
+<td style="text-align: left;">$5,606</td>
+<td style="text-align: left;">$1,426</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">South Dakota</td>
+<td style="text-align: left;">$4,143</td>
+<td style="text-align: left;">$5,519</td>
+<td style="text-align: left;">$1,376</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Virginia</td>
+<td style="text-align: left;">$4,167</td>
+<td style="text-align: left;">$5,534</td>
+<td style="text-align: left;">$1,366</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Rhode Island</td>
+<td style="text-align: left;">$4,216</td>
+<td style="text-align: left;">$5,567</td>
+<td style="text-align: left;">$1,351</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Iowa</td>
+<td style="text-align: left;">$4,143</td>
+<td style="text-align: left;">$5,456</td>
+<td style="text-align: left;">$1,313</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Connecticut</td>
+<td style="text-align: left;">$4,471</td>
+<td style="text-align: left;">$5,723</td>
+<td style="text-align: left;">$1,252</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">North Carolina</td>
+<td style="text-align: left;">$4,082</td>
+<td style="text-align: left;">$5,306</td>
+<td style="text-align: left;">$1,223</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Indiana</td>
+<td style="text-align: left;">$4,617</td>
+<td style="text-align: left;">$5,664</td>
+<td style="text-align: left;">$1,047</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Maine</td>
+<td style="text-align: left;">$4,641</td>
+<td style="text-align: left;">$5,661</td>
+<td style="text-align: left;">$1,019</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Wyoming</td>
+<td style="text-align: left;">$4,690</td>
+<td style="text-align: left;">$5,703</td>
+<td style="text-align: left;">$1,013</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Florida</td>
+<td style="text-align: left;">$4,751</td>
+<td style="text-align: left;">$5,749</td>
+<td style="text-align: left;">$ 999</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">New Mexico</td>
+<td style="text-align: left;">$4,520</td>
+<td style="text-align: left;">$5,438</td>
+<td style="text-align: left;">$ 918</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Minnesota</td>
+<td style="text-align: left;">$4,593</td>
+<td style="text-align: left;">$5,502</td>
+<td style="text-align: left;">$ 910</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">New Jersey</td>
+<td style="text-align: left;">$4,714</td>
+<td style="text-align: left;">$5,583</td>
+<td style="text-align: left;">$ 869</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ohio</td>
+<td style="text-align: left;">$4,896</td>
+<td style="text-align: left;">$5,725</td>
+<td style="text-align: left;">$ 829</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arizona</td>
+<td style="text-align: left;">$5,091</td>
+<td style="text-align: left;">$5,839</td>
+<td style="text-align: left;">$ 749</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Alaska</td>
+<td style="text-align: left;">$6,196</td>
+<td style="text-align: left;">$6,926</td>
+<td style="text-align: left;">$ 729</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Georgia</td>
+<td style="text-align: left;">$4,653</td>
+<td style="text-align: left;">$5,372</td>
+<td style="text-align: left;">$ 718</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Texas</td>
+<td style="text-align: left;">$4,435</td>
+<td style="text-align: left;">$5,103</td>
+<td style="text-align: left;">$ 668</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Montana</td>
+<td style="text-align: left;">$5,528</td>
+<td style="text-align: left;">$5,981</td>
+<td style="text-align: left;">$ 453</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mississippi</td>
+<td style="text-align: left;">$4,641</td>
+<td style="text-align: left;">$4,983</td>
+<td style="text-align: left;">$ 342</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">New Hampshire</td>
+<td style="text-align: left;">$5,273</td>
+<td style="text-align: left;">$5,501</td>
+<td style="text-align: left;">$ 228</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Kentucky</td>
+<td style="text-align: left;">$5,164</td>
+<td style="text-align: left;">$5,372</td>
+<td style="text-align: left;">$ 208</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">North Dakota</td>
+<td style="text-align: left;">$5,152</td>
+<td style="text-align: left;">$5,353</td>
+<td style="text-align: left;">$ 202</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Oklahoma</td>
+<td style="text-align: left;">$4,945</td>
+<td style="text-align: left;">$5,088</td>
+<td style="text-align: left;">$ 143</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Wisconsin</td>
+<td style="text-align: left;">$5,212</td>
+<td style="text-align: left;">$5,350</td>
+<td style="text-align: left;">$ 137</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Arkansas</td>
+<td style="text-align: left;">$5,152</td>
+<td style="text-align: left;">$5,175</td>
+<td style="text-align: left;">$ 23</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Louisiana</td>
+<td style="text-align: left;">$5,188</td>
+<td style="text-align: left;">$5,099</td>
+<td style="text-align: left;">$ -89</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">South Carolina</td>
+<td style="text-align: left;">$5,346</td>
+<td style="text-align: left;">$5,188</td>
+<td style="text-align: left;">$ -158</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Alabama</td>
+<td style="text-align: left;">$5,310</td>
+<td style="text-align: left;">$5,134</td>
+<td style="text-align: left;">$ -175</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tennessee</td>
+<td style="text-align: left;">$5,674</td>
+<td style="text-align: left;">$5,140</td>
+<td style="text-align: left;">$ -534</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">West Virginia</td>
+<td style="text-align: left;">$6,367</td>
+<td style="text-align: left;">$5,670</td>
+<td style="text-align: left;">$ -697</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="summary-insights" class="level2">
+<h2 class="anchored" data-anchor-id="summary-insights">Summary Insights</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Key Insights:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>=============</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>- Best vehicle comparison: Honda Prologue vs Honda Passport </code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>- Average savings across all comparisons: $ 376 </code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>- Analysis based on 13,500 miles per year over 3 years</code></pre>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/SmartSilver5294\.github\.io\/ev-vs-gas-costs\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

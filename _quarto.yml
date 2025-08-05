@@ -37,6 +37,8 @@ website:
             text: Nissan Ariya vs Nissan Rogue
           - href: kia-comparison.qmd
             text: Kia EV6 vs Kia Sportage
+      - href: model.qmd
+        text: Model
       - href: sources.qmd
         text: Sources
       - about.qmd

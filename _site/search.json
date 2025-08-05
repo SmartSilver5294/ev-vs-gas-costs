@@ -86,9 +86,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "EV Charging vs Gas Costs Over 3 Years Graphic",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
     "section": "",
-    "text": "Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from AAA. Today, I have compiled the data into multiple interactive graphs that lets you visualize EV costs over a span of 3 years compared to gas costs over the same time frame. I also made multiple other graphs and tables that demonstrate the key takeaways and comparisons of specific cars. I have found that the best EV model compared to its gas counterpart is the Honda Prologue, and the best states to buy an EV in are Washington and California. Feel free to look around and enjoy the website!"
+    "text": "Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from AAA. The data is compiled into multiple interactive graphs that lets you visualize EV costs over a span of 3 years compared to gas costs over the same time frame. I have found that the best states to buy an EV in are Washington and California."
   },
   {
     "objectID": "kia-comparison.html",
@@ -124,5 +124,33 @@
     "title": "Vehicle Overview",
     "section": "EV vs Gas Cost Comparison",
     "text": "EV vs Gas Cost Comparison\n\n\n\nAvailable Vehicle Comparisons\n\n\nIndex\nVehicle Comparison (EV vs Gas)\nEV Efficiency\nGas Efficiency\n\n\n\n\n1\nFord Mustang Mach-E vs Ford Mustang\n0.32 kWh/mile\n25 mpg\n\n\n2\nHyundai Ioniq 5 vs Hyundai Tucson\n0.28 kWh/mile\n26 mpg\n\n\n3\nFord F-150 Lightning vs Ford F-150\n0.48 kWh/mile\n20 mpg\n\n\n4\nHonda Prologue vs Honda Passport\n0.3 kWh/mile\n22 mpg\n\n\n5\nChevrolet Equinox EV vs Chevrolet Equinox\n0.29 kWh/mile\n28 mpg\n\n\n6\nCadillac Lyriq vs Cadillac XT5\n0.33 kWh/mile\n21 mpg\n\n\n7\nVolkswagen ID.4 vs Volkswagen Tiguan\n0.3 kWh/mile\n24 mpg\n\n\n8\nNissan Ariya vs Nissan Rogue\n0.31 kWh/mile\n27 mpg\n\n\n9\nKia EV6 vs Kia Sportage\n0.28 kWh/mile\n25 mpg"
+  },
+  {
+    "objectID": "index.html#red-means-that-evs-are-cheaper-and-green-means-that-gas-vehicles-are-cheaper",
+    "href": "index.html#red-means-that-evs-are-cheaper-and-green-means-that-gas-vehicles-are-cheaper",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "section": "",
+    "text": "Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from AAA. I have compiled the data into multiple interactive graphs that lets you visualize EV costs over a span of 3 years compared to gas costs over the same time frame. I have found that the best states to buy an EV in are Washington and California."
+  },
+  {
+    "objectID": "model.html",
+    "href": "model.html",
+    "title": "Model",
+    "section": "",
+    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = cost_diff ~ Regular + Cost_per_kWh, data = data)\n\nCoefficients:\n (Intercept)       Regular  Cost_per_kWh  \n   4.075e-12     1.620e+03    -1.215e+04"
+  },
+  {
+    "objectID": "model.html#linear-regression-model",
+    "href": "model.html#linear-regression-model",
+    "title": "Model",
+    "section": "",
+    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = cost_diff ~ Regular + Cost_per_kWh, data = data)\n\nCoefficients:\n (Intercept)       Regular  Cost_per_kWh  \n   4.075e-12     1.620e+03    -1.215e+04"
+  },
+  {
+    "objectID": "model.html#latex-code",
+    "href": "model.html#latex-code",
+    "title": "Model",
+    "section": "LaTeX Code",
+    "text": "LaTeX Code\n\\[\n\\begin{equation}\n\\text{Cost Difference}_i = \\beta_0 + \\beta_1 \\times \\text{Regular}_i + \\beta_2 \\times \\text{Cost per kWh}_i + \\epsilon_i\n\\end{equation}\n\\]\nWhere:\n\n\\(\\beta_0\\): This represents the cost difference when both gas and charging prices are zero.\n\\(\\beta_1\\): This represents how much the cost difference changes for regular gas price.\n\\(\\beta_2\\): This represents how much the cost difference changes for charging costs per kWh."
   }
 ]
