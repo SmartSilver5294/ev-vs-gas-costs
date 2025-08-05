@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sources – EV Charging vs Gas Costs Over 3 Years</title>
+<title>Model – EV Charging vs Gas Costs Over 3 Years</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -160,11 +189,11 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./model.html"> 
+    <a class="nav-link active" href="./model.html" aria-current="page"> 
 <span class="menu-text">Model</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./sources.html" aria-current="page"> 
+    <a class="nav-link" href="./sources.html"> 
 <span class="menu-text">Sources</span></a>
   </li>  
   <li class="nav-item">
@@ -182,15 +211,22 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#linear-regression-model" id="toc-linear-regression-model" class="nav-link active" data-scroll-target="#linear-regression-model">Linear Regression Model</a></li>
+  <li><a href="#latex-code" id="toc-latex-code" class="nav-link" data-scroll-target="#latex-code">LaTeX Code</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Sources</h1>
+<h1 class="title">Model</h1>
 </div>
 
 
@@ -207,9 +243,38 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The data was taken from a dataset published by <a href="https://gasprices.aaa.com/ev-charging-prices/">AAA</a> and was added to/adjusted by me, Copilot AI, Chat GPT, and Claude AI. Since there was little data for multiple graphs, I decided to add a comparison of different EVs and their gas counterparts to further explore the connections and differences between prices in different states.</p>
+<section id="linear-regression-model" class="level2">
+<h2 class="anchored" data-anchor-id="linear-regression-model">Linear Regression Model</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>parsnip model object
 
 
+Call:
+stats::lm(formula = cost_diff ~ Regular + Cost_per_kWh, data = data)
+
+Coefficients:
+ (Intercept)       Regular  Cost_per_kWh  
+   4.075e-12     1.620e+03    -1.215e+04  </code></pre>
+</div>
+</div>
+</section>
+<section id="latex-code" class="level2">
+<h2 class="anchored" data-anchor-id="latex-code">LaTeX Code</h2>
+<p><span class="math display">\[
+\begin{equation}
+\text{Cost Difference}_i = \beta_0 + \beta_1 \times \text{Regular}_i + \beta_2 \times \text{Cost per kWh}_i + \epsilon_i
+\end{equation}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p><strong><span class="math inline">\(\beta_0\)</span></strong>: This represents the cost difference when both gas and charging prices are zero.</p></li>
+<li><p><strong><span class="math inline">\(\beta_1\)</span></strong>: This represents how much the cost difference changes for regular gas price.</p></li>
+<li><p><strong><span class="math inline">\(\beta_2\)</span></strong>: This represents how much the cost difference changes for charging costs per kWh.</p></li>
+</ul>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
