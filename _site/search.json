@@ -28,25 +28,39 @@
     "text": "Comparing: Ford Mustang Mach-E vs Ford Mustang \n\nEV Efficiency: 0.32 kWh/mile\nGas Efficiency: 25 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   },
   {
-    "objectID": "ioniq-comparison.html",
-    "href": "ioniq-comparison.html",
-    "title": "Analysis: Hyundai Ioniq 5 vs Hyundai Tucson",
+    "objectID": "kia-comparison.html",
+    "href": "kia-comparison.html",
+    "title": "Vehicle Analysis: Kia EV6 vs Kia Sportage",
     "section": "",
-    "text": "Comparing: Hyundai Ioniq 5 vs Hyundai Tucson \n\nEV Efficiency: 0.28 kWh/mile\nGas Efficiency: 26 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+    "text": "Comparing: Kia EV6 vs Kia Sportage \n\nEV Efficiency: 0.28 kWh/mile\nGas Efficiency: 25 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   },
   {
-    "objectID": "honda-comparison.html",
-    "href": "honda-comparison.html",
-    "title": "Analysis: Honda Prologue vs Honda Passport",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "EV Charging vs Gas Costs Over 3 Years",
     "section": "",
-    "text": "Comparing: Honda Prologue vs Honda Passport \n\nEV Efficiency: 0.3 kWh/mile\nGas Efficiency: 22 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+    "text": "Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from AAA. The data is compiled into multiple interactive graphs that lets you visualize EV costs over a span of 3 years compared to gas costs over the same time frame. I have found that the best states to buy an EV in are Washington and California."
   },
   {
-    "objectID": "chevy-comparison.html",
-    "href": "chevy-comparison.html",
-    "title": "Analysis: Chevrolet Equinox EV vs Chevrolet Equinox",
+    "objectID": "F-150-comparison.html",
+    "href": "F-150-comparison.html",
+    "title": "Analysis: Ford F-150 Lightning vs Ford F-150",
     "section": "",
-    "text": "Comparing: Chevrolet Equinox EV vs Chevrolet Equinox \n\nEV Efficiency: 0.29 kWh/mile\nGas Efficiency: 28 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+    "text": "Comparing: Ford F-150 Lightning vs Ford F-150 \n\nEV Efficiency: 0.48 kWh/mile\nGas Efficiency: 20 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "cadillac-comparison.html",
+    "href": "cadillac-comparison.html",
+    "title": "Vehicle Analysis: Cadillac Lyriq vs Cadillac XT5",
+    "section": "",
+    "text": "Comparing: Cadillac Lyriq vs Cadillac XT5 \n\nEV Efficiency: 0.33 kWh/mile\nGas Efficiency: 21 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "My name is Ayush Chandra and I am in 9th grade at Sharon High School. You find my work on GitHub or contact me at chandra.ayush2021@gmail.com.\nMy project is about the average cost of paying for gas versus paying for charging over a 3 year period in the US. It also includes comparisons between different EVs and their gas counterparts. The code and data are available at the Github Repo.\nThis site was created for Kane’s Data Science Bootcamp."
   },
   {
     "objectID": "additional-analysis.html#state-by-state-breakdown-for-best-vehicle-comparison",
@@ -63,39 +77,46 @@
     "text": "Summary Insights\n\n\nKey Insights:\n\n\n=============\n\n\n- Best vehicle comparison: Honda Prologue vs Honda Passport \n\n\n- Average savings across all comparisons: $ 376 \n\n\n- Analysis based on 13,500 miles per year over 3 years"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "chevy-comparison.html",
+    "href": "chevy-comparison.html",
+    "title": "Analysis: Chevrolet Equinox EV vs Chevrolet Equinox",
     "section": "",
-    "text": "My name is Ayush Chandra and I am in 9th grade at Sharon High School. You find my work on GitHub or contact me at chandra.ayush2021@gmail.com.\nMy project is about the average cost of paying for gas versus paying for charging over a 3 year period in the US. It also includes comparisons between different EVs and their gas counterparts. The code and data are available at the Github Repo.\nThis site was created for Kane’s Data Science Bootcamp."
+    "text": "Comparing: Chevrolet Equinox EV vs Chevrolet Equinox \n\nEV Efficiency: 0.29 kWh/mile\nGas Efficiency: 28 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   },
   {
-    "objectID": "cadillac-comparison.html",
-    "href": "cadillac-comparison.html",
-    "title": "Vehicle Analysis: Cadillac Lyriq vs Cadillac XT5",
+    "objectID": "honda-comparison.html",
+    "href": "honda-comparison.html",
+    "title": "Analysis: Honda Prologue vs Honda Passport",
     "section": "",
-    "text": "Comparing: Cadillac Lyriq vs Cadillac XT5 \n\nEV Efficiency: 0.33 kWh/mile\nGas Efficiency: 21 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+    "text": "Comparing: Honda Prologue vs Honda Passport \n\nEV Efficiency: 0.3 kWh/mile\nGas Efficiency: 22 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   },
   {
-    "objectID": "F-150-comparison.html",
-    "href": "F-150-comparison.html",
-    "title": "Analysis: Ford F-150 Lightning vs Ford F-150",
+    "objectID": "ioniq-comparison.html",
+    "href": "ioniq-comparison.html",
+    "title": "Analysis: Hyundai Ioniq 5 vs Hyundai Tucson",
     "section": "",
-    "text": "Comparing: Ford F-150 Lightning vs Ford F-150 \n\nEV Efficiency: 0.48 kWh/mile\nGas Efficiency: 20 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+    "text": "Comparing: Hyundai Ioniq 5 vs Hyundai Tucson \n\nEV Efficiency: 0.28 kWh/mile\nGas Efficiency: 26 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
+    "objectID": "model.html",
+    "href": "model.html",
+    "title": "Model",
     "section": "",
-    "text": "Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from AAA. The data is compiled into multiple interactive graphs that lets you visualize EV costs over a span of 3 years compared to gas costs over the same time frame. I have found that the best states to buy an EV in are Washington and California."
+    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = cost_diff ~ Regular + Cost_per_kWh, data = data)\n\nCoefficients:\n (Intercept)       Regular  Cost_per_kWh  \n   4.075e-12     1.620e+03    -1.215e+04"
   },
   {
-    "objectID": "kia-comparison.html",
-    "href": "kia-comparison.html",
-    "title": "Vehicle Analysis: Kia EV6 vs Kia Sportage",
+    "objectID": "model.html#linear-regression-model",
+    "href": "model.html#linear-regression-model",
+    "title": "Model",
     "section": "",
-    "text": "Comparing: Kia EV6 vs Kia Sportage \n\nEV Efficiency: 0.28 kWh/mile\nGas Efficiency: 25 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
+    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = cost_diff ~ Regular + Cost_per_kWh, data = data)\n\nCoefficients:\n (Intercept)       Regular  Cost_per_kWh  \n   4.075e-12     1.620e+03    -1.215e+04"
+  },
+  {
+    "objectID": "model.html#latex-code",
+    "href": "model.html#latex-code",
+    "title": "Model",
+    "section": "LaTeX Code",
+    "text": "LaTeX Code\n\\[\n\\begin{equation}\n\\text{Cost Difference}_i = \\beta_0 + \\beta_1 \\times \\text{Regular}_i + \\beta_2 \\times \\text{Cost per kWh}_i + \\epsilon_i\n\\end{equation}\n\\]\nWhere:\n\n\\(\\beta_0\\): This represents the cost difference when both gas and charging prices are zero.\n\\(\\beta_1\\): This represents how much the cost difference changes for regular gas price.\n\\(\\beta_2\\): This represents how much the cost difference changes for charging costs per kWh."
   },
   {
     "objectID": "nissan-comparison.html",
@@ -124,33 +145,5 @@
     "title": "Vehicle Overview",
     "section": "EV vs Gas Cost Comparison",
     "text": "EV vs Gas Cost Comparison\n\n\n\nAvailable Vehicle Comparisons\n\n\nIndex\nVehicle Comparison (EV vs Gas)\nEV Efficiency\nGas Efficiency\n\n\n\n\n1\nFord Mustang Mach-E vs Ford Mustang\n0.32 kWh/mile\n25 mpg\n\n\n2\nHyundai Ioniq 5 vs Hyundai Tucson\n0.28 kWh/mile\n26 mpg\n\n\n3\nFord F-150 Lightning vs Ford F-150\n0.48 kWh/mile\n20 mpg\n\n\n4\nHonda Prologue vs Honda Passport\n0.3 kWh/mile\n22 mpg\n\n\n5\nChevrolet Equinox EV vs Chevrolet Equinox\n0.29 kWh/mile\n28 mpg\n\n\n6\nCadillac Lyriq vs Cadillac XT5\n0.33 kWh/mile\n21 mpg\n\n\n7\nVolkswagen ID.4 vs Volkswagen Tiguan\n0.3 kWh/mile\n24 mpg\n\n\n8\nNissan Ariya vs Nissan Rogue\n0.31 kWh/mile\n27 mpg\n\n\n9\nKia EV6 vs Kia Sportage\n0.28 kWh/mile\n25 mpg"
-  },
-  {
-    "objectID": "index.html#red-means-that-evs-are-cheaper-and-green-means-that-gas-vehicles-are-cheaper",
-    "href": "index.html#red-means-that-evs-are-cheaper-and-green-means-that-gas-vehicles-are-cheaper",
-    "title": "EV Charging vs Gas Costs Over 3 Years",
-    "section": "",
-    "text": "Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from AAA. I have compiled the data into multiple interactive graphs that lets you visualize EV costs over a span of 3 years compared to gas costs over the same time frame. I have found that the best states to buy an EV in are Washington and California."
-  },
-  {
-    "objectID": "model.html",
-    "href": "model.html",
-    "title": "Model",
-    "section": "",
-    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = cost_diff ~ Regular + Cost_per_kWh, data = data)\n\nCoefficients:\n (Intercept)       Regular  Cost_per_kWh  \n   4.075e-12     1.620e+03    -1.215e+04"
-  },
-  {
-    "objectID": "model.html#linear-regression-model",
-    "href": "model.html#linear-regression-model",
-    "title": "Model",
-    "section": "",
-    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = cost_diff ~ Regular + Cost_per_kWh, data = data)\n\nCoefficients:\n (Intercept)       Regular  Cost_per_kWh  \n   4.075e-12     1.620e+03    -1.215e+04"
-  },
-  {
-    "objectID": "model.html#latex-code",
-    "href": "model.html#latex-code",
-    "title": "Model",
-    "section": "LaTeX Code",
-    "text": "LaTeX Code\n\\[\n\\begin{equation}\n\\text{Cost Difference}_i = \\beta_0 + \\beta_1 \\times \\text{Regular}_i + \\beta_2 \\times \\text{Cost per kWh}_i + \\epsilon_i\n\\end{equation}\n\\]\nWhere:\n\n\\(\\beta_0\\): This represents the cost difference when both gas and charging prices are zero.\n\\(\\beta_1\\): This represents how much the cost difference changes for regular gas price.\n\\(\\beta_2\\): This represents how much the cost difference changes for charging costs per kWh."
   }
 ]
