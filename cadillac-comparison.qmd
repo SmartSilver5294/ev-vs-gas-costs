@@ -1,5 +1,5 @@
 ---
-title: "Vehicle Analysis: Cadillac Lyriq vs Cadillac XT5"
+title: "Analysis: Cadillac Lyriq vs Cadillac XT5"
 format: html
 execute:
     echo: false

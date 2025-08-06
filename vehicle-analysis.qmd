@@ -297,7 +297,7 @@ create_summary_data <- function() {
 
 ## Overall Summary Statistics
 
-Click on the arrows to order the table as you wish.
+Click on the arrows to order the table in any way.
 
 ```{r overall_summary}
 # Display overall summary table

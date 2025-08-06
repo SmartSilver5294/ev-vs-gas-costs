@@ -1,5 +1,5 @@
 ---
-title: "Analysis: Volkswagen ID.4 vs Volkswagen Tiguan"
+title: "Volkswagen ID.4 vs Volkswagen Tiguan"
 format: html
 execute:
     echo: false
