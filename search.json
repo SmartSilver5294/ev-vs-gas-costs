@@ -2,7 +2,7 @@
   {
     "objectID": "volkswagen-comparison.html",
     "href": "volkswagen-comparison.html",
-    "title": "Analysis: Volkswagen ID.4 vs Volkswagen Tiguan",
+    "title": "Volkswagen ID.4 vs Volkswagen Tiguan",
     "section": "",
     "text": "Comparing: Volkswagen ID.4 vs Volkswagen Tiguan \n\nEV Efficiency: 0.3 kWh/mile\nGas Efficiency: 24 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   },
@@ -11,19 +11,19 @@
     "href": "vehicle-analysis.html#overall-summary-statistics",
     "title": "Analysis Results",
     "section": "Overall Summary Statistics",
-    "text": "Overall Summary Statistics\nClick on the arrows to order the table as you wish."
+    "text": "Overall Summary Statistics\nClick on the arrows to order the table in any way."
   },
   {
     "objectID": "sources.html",
     "href": "sources.html",
     "title": "Sources",
     "section": "",
-    "text": "The data was taken from a dataset published by AAA and was added to/adjusted by me, Copilot AI, Chat GPT, and Claude AI. Since there was little data for multiple graphs, I decided to add a comparison of different EVs and their gas counterparts to further explore the connections and differences between prices in different states."
+    "text": "The data was taken from a dataset published by AAA and was added to/adjusted by me, Copilot AI, Chat GPT, and Claude AI. Since there was little data for multiple graphs, I decided to add a comparison of different EVs and their gas counterparts to further explore the connections and differences between charging and gas prices in different states."
   },
   {
     "objectID": "mustang-comparison.html",
     "href": "mustang-comparison.html",
-    "title": "Analysis: Ford Mustang Mach-E vs Ford Mustang",
+    "title": "Ford Mustang Mach-E vs Ford Mustang",
     "section": "",
     "text": "Comparing: Ford Mustang Mach-E vs Ford Mustang \n\nEV Efficiency: 0.32 kWh/mile\nGas Efficiency: 25 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   },
@@ -39,7 +39,7 @@
     "href": "index.html",
     "title": "EV Charging vs Gas Costs Over 3 Years",
     "section": "",
-    "text": "Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from AAA. The data is compiled into multiple interactive graphs that lets you visualize EV costs over a span of 3 years compared to gas costs over the same time frame. I have found that the best states to buy an EV in are Washington and California."
+    "text": "Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from AAA. The data is compiled into multiple interactive graphs that lets you visualize charging costs over a span of 3 years compared to gas costs over the same time frame. I have found that the best states to buy an EV in are Washington and California."
   },
   {
     "objectID": "F-150-comparison.html",
@@ -51,7 +51,7 @@
   {
     "objectID": "cadillac-comparison.html",
     "href": "cadillac-comparison.html",
-    "title": "Vehicle Analysis: Cadillac Lyriq vs Cadillac XT5",
+    "title": "Analysis: Cadillac Lyriq vs Cadillac XT5",
     "section": "",
     "text": "Comparing: Cadillac Lyriq vs Cadillac XT5 \n\nEV Efficiency: 0.33 kWh/mile\nGas Efficiency: 21 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   },
@@ -79,7 +79,7 @@
   {
     "objectID": "chevy-comparison.html",
     "href": "chevy-comparison.html",
-    "title": "Analysis: Chevrolet Equinox EV vs Chevrolet Equinox",
+    "title": "Chevrolet Equinox EV vs Chevrolet Equinox",
     "section": "",
     "text": "Comparing: Chevrolet Equinox EV vs Chevrolet Equinox \n\nEV Efficiency: 0.29 kWh/mile\nGas Efficiency: 28 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   },
@@ -121,7 +121,7 @@
   {
     "objectID": "nissan-comparison.html",
     "href": "nissan-comparison.html",
-    "title": "Vehicle Analysis: Nissan Ariya vs Nissan Rogue",
+    "title": "Analysis: Nissan Ariya vs Nissan Rogue",
     "section": "",
     "text": "Comparing: Nissan Ariya vs Nissan Rogue \n\nEV Efficiency: 0.31 kWh/mile\nGas Efficiency: 27 mpg\n\nAnalysis based on 13,500 miles/year over 3 years"
   },
