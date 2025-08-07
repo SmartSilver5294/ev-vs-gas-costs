@@ -251,10 +251,10 @@ window.Quarto = {
 
 
 Call:
-stats::lm(formula = cost_diff ~ Regular + Cost_per_kWh, data = data)
+stats::lm(formula = cost_diff ~ Gas_cost + Cost_per_kWh, data = data)
 
 Coefficients:
- (Intercept)       Regular  Cost_per_kWh  
+ (Intercept)      Gas_cost  Cost_per_kWh  
    4.075e-12     1.620e+03    -1.215e+04  </code></pre>
 </div>
 </div>
@@ -263,7 +263,7 @@ Coefficients:
 <h2 class="anchored" data-anchor-id="latex-code">LaTeX Code</h2>
 <p><span class="math display">\[
 \begin{equation}
-\text{Cost Difference}_i = \beta_0 + \beta_1 \times \text{Regular}_i + \beta_2 \times \text{Cost per kWh}_i + \epsilon_i
+\text{Cost Difference}_i = \beta_0 + \beta_1 \times \text{Gas Cost}_i + \beta_2 \times \text{Cost per kWh}_i + \epsilon_i
 \end{equation}
 \]</span></p>
 <p>Where:</p>
