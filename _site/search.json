@@ -102,21 +102,21 @@
     "href": "model.html",
     "title": "Model",
     "section": "",
-    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = cost_diff ~ Regular + Cost_per_kWh, data = data)\n\nCoefficients:\n (Intercept)       Regular  Cost_per_kWh  \n   4.075e-12     1.620e+03    -1.215e+04"
+    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = cost_diff ~ Gas_cost + Cost_per_kWh, data = data)\n\nCoefficients:\n (Intercept)      Gas_cost  Cost_per_kWh  \n   4.075e-12     1.620e+03    -1.215e+04"
   },
   {
     "objectID": "model.html#linear-regression-model",
     "href": "model.html#linear-regression-model",
     "title": "Model",
     "section": "",
-    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = cost_diff ~ Regular + Cost_per_kWh, data = data)\n\nCoefficients:\n (Intercept)       Regular  Cost_per_kWh  \n   4.075e-12     1.620e+03    -1.215e+04"
+    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = cost_diff ~ Gas_cost + Cost_per_kWh, data = data)\n\nCoefficients:\n (Intercept)      Gas_cost  Cost_per_kWh  \n   4.075e-12     1.620e+03    -1.215e+04"
   },
   {
     "objectID": "model.html#latex-code",
     "href": "model.html#latex-code",
     "title": "Model",
     "section": "LaTeX Code",
-    "text": "LaTeX Code\n\\[\n\\begin{equation}\n\\text{Cost Difference}_i = \\beta_0 + \\beta_1 \\times \\text{Regular}_i + \\beta_2 \\times \\text{Cost per kWh}_i + \\epsilon_i\n\\end{equation}\n\\]\nWhere:\n\n\\(\\beta_0\\): This represents the cost difference when both gas and charging prices are zero.\n\\(\\beta_1\\): This represents how much the cost difference changes for regular gas price.\n\\(\\beta_2\\): This represents how much the cost difference changes for charging costs per kWh."
+    "text": "LaTeX Code\n\\[\n\\begin{equation}\n\\text{Cost Difference}_i = \\beta_0 + \\beta_1 \\times \\text{Gas Cost}_i + \\beta_2 \\times \\text{Cost per kWh}_i + \\epsilon_i\n\\end{equation}\n\\]\nWhere:\n\n\\(\\beta_0\\): This represents the cost difference when both gas and charging prices are zero.\n\\(\\beta_1\\): This represents how much the cost difference changes for regular gas price.\n\\(\\beta_2\\): This represents how much the cost difference changes for charging costs per kWh."
   },
   {
     "objectID": "nissan-comparison.html",

@@ -138,7 +138,7 @@ combined_data <- left_join(gas_prices, ev_prices, by = "State")
 combined_data <- combined_data |> 
   mutate(
     EV_3yr_Cost = Cost_per_kWh * 4050 * 3,
-    Gas_3yr_Cost = Regular * 540 * 3
+    Gas_3yr_Cost = Gas_cost * 540 * 3
   )
 
 combined_data <- combined_data %>%
