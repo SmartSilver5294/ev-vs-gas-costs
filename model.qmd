@@ -21,7 +21,7 @@ library(broom)
 
 ```{r}
 gas_prices <- read.csv(text = "
-State,Regular
+State,Gas_cost
 Alaska,3.762
 Alabama,2.789
 Arkansas,2.811
@@ -152,7 +152,7 @@ combined_data <- combined_data %>%
 ```{r}
 # Predict cost difference from gas and EV prices
 linear_reg() |> 
-    fit(cost_diff ~ Regular + Cost_per_kWh, data = combined_data)
+    fit(cost_diff ~ Gas_cost + Cost_per_kWh, data = combined_data)
 ```
 
 
@@ -160,7 +160,7 @@ linear_reg() |>
 
 $$
 \begin{equation}
-\text{Cost Difference}_i = \beta_0 + \beta_1 \times \text{Regular}_i + \beta_2 \times \text{Cost per kWh}_i + \epsilon_i
+\text{Cost Difference}_i = \beta_0 + \beta_1 \times \text{Gas Cost}_i + \beta_2 \times \text{Cost per kWh}_i + \epsilon_i
 \end{equation}
 $$
 
