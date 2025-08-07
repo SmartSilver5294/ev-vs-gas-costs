@@ -150,9 +150,14 @@ combined_data <- combined_data %>%
 ## Linear Regression Model
 
 ```{r}
+#| warning: false
 # Predict cost difference from gas and EV prices
-linear_reg() |> 
+model <- linear_reg() |> 
     fit(cost_diff ~ Gas_cost + Cost_per_kWh, data = combined_data)
+
+model
+
+tidy(model, conf.int = TRUE)
 ```
 
 

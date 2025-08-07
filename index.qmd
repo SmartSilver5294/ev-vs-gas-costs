@@ -226,4 +226,4 @@ leaflet(states_sf) %>%
 
 
 Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from [AAA](https://gasprices.aaa.com/ev-charging-prices/). The data is compiled into multiple interactive graphs
-that lets you visualize charging costs over a span of 3 years compared to gas costs over the same time frame. I have found that the best states to buy an EV in are Washington and California, where you can save over $3,500.
+that lets you visualize charging costs over a span of 3 years compared to gas costs over the same time frame. I have found that the best states to buy an EV in are Washington and California, where you can save over $2,500 on average.
