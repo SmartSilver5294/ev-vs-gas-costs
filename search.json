@@ -39,7 +39,7 @@
     "href": "index.html",
     "title": "EV Charging vs Gas Costs Over 3 Years",
     "section": "",
-    "text": "Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from AAA. The data is compiled into multiple interactive graphs that lets you visualize charging costs over a span of 3 years compared to gas costs over the same time frame. I have found that the best states to buy an EV in are Washington and California, where you can save over $3,500."
+    "text": "Have you ever wondered whether an EV or a gas car would be better for you? I’ve been exploring the best states to buy an EV in, and comparing different EVs with their gas counterparts using a data set from AAA. The data is compiled into multiple interactive graphs that lets you visualize charging costs over a span of 3 years compared to gas costs over the same time frame. I have found that the best states to buy an EV in are Washington and California, where you can save over $2,500."
   },
   {
     "objectID": "F-150-comparison.html",
@@ -102,14 +102,14 @@
     "href": "model.html",
     "title": "Model",
     "section": "",
-    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = cost_diff ~ Gas_cost + Cost_per_kWh, data = data)\n\nCoefficients:\n (Intercept)      Gas_cost  Cost_per_kWh  \n   4.075e-12     1.620e+03    -1.215e+04"
+    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = cost_diff ~ Gas_cost + Cost_per_kWh, data = data)\n\nCoefficients:\n (Intercept)      Gas_cost  Cost_per_kWh  \n   4.075e-12     1.620e+03    -1.215e+04  \n\n\n# A tibble: 3 × 7\n  term          estimate std.error statistic  p.value  conf.low conf.high\n  &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)   4.08e-12  1.13e-12   3.59e 0 0.000767  1.80e-12  6.36e-12\n2 Gas_cost      1.62e+ 3  2.85e-13   5.69e15 0         1.62e+ 3  1.62e+ 3\n3 Cost_per_kWh -1.21e+ 4  2.11e-12  -5.75e15 0        -1.22e+ 4 -1.21e+ 4"
   },
   {
     "objectID": "model.html#linear-regression-model",
     "href": "model.html#linear-regression-model",
     "title": "Model",
     "section": "",
-    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = cost_diff ~ Gas_cost + Cost_per_kWh, data = data)\n\nCoefficients:\n (Intercept)      Gas_cost  Cost_per_kWh  \n   4.075e-12     1.620e+03    -1.215e+04"
+    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = cost_diff ~ Gas_cost + Cost_per_kWh, data = data)\n\nCoefficients:\n (Intercept)      Gas_cost  Cost_per_kWh  \n   4.075e-12     1.620e+03    -1.215e+04  \n\n\n# A tibble: 3 × 7\n  term          estimate std.error statistic  p.value  conf.low conf.high\n  &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)   4.08e-12  1.13e-12   3.59e 0 0.000767  1.80e-12  6.36e-12\n2 Gas_cost      1.62e+ 3  2.85e-13   5.69e15 0         1.62e+ 3  1.62e+ 3\n3 Cost_per_kWh -1.21e+ 4  2.11e-12  -5.75e15 0        -1.22e+ 4 -1.21e+ 4"
   },
   {
     "objectID": "model.html#latex-code",
